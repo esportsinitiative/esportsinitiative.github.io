@@ -1,0 +1,16 @@
+---
+layout: team
+title: League of Legends
+permalink: /teams/Leagueoflegends
+category: team
+logo: /images/lol_logo.png
+---
+
+<img src= "/images/lol_map.jpg" />
+<div>
+	{% for my_page in site.pages %}
+	  {% if my_page.category == "LoL-player" %}
+	  <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
+	  {% endif %}
+	{% endfor %}
+</div>

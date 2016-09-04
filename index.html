@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <div>
+    <div style="text-align: center">
+      <h1>Are you a gamer?</h1>
+    </div>
+    <p>The eSports Initiative (ESI) is first and foremost passionate about gaming. We hold casual and competitive events to expand the gaming community at The Ohio State University and throughout Columbus. Our goal is to use gaming as a means to directly impact our community. Learn more about our Events and main Games by visiting their respective pages. If you would like more information about ESI proceed to About Us.</p>
+  </div>
+
+  <div style="height: 480px; text-align: center; vertical-align: middle; border: 1px solid white;">
+    <p> Embed youtube playlist of highlight videos </p>
+  </div>
+
+  <h1 class="page-heading">Upcoming Events</h1>
+
+  <ul class="post-list">
+    {% for event in site.posts reversed %}
+      <li class="post-listing">
+        <span class="post-meta">{{ event.real-date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ event.url | prepend: site.baseurl }}">{{ event.title | escape }}</a>
+        </h2>
+
+        <span class="post-meta">{{ event.location | escape }}</span>
+
+        <span class="post-meta">{{ event.time | escape }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

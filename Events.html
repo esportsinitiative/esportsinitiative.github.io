@@ -1,0 +1,22 @@
+---
+layout: page
+title: Upcoming Events
+permalink: /events/
+category: menu-bar
+---
+
+<ul class="post-list">
+    {% for event in site.posts reversed %}
+      <li class="post-listing">
+        <span class="post-meta">{{ event.real-date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ event.url | prepend: site.baseurl }}">{{ event.title | escape }}</a>
+        </h2>
+
+        <span class="post-meta">{{ event.location | escape }}</span>
+
+        <span class="post-meta">{{ event.time | escape }}</span>
+      </li>
+    {% endfor %}
+  </ul>
