@@ -16,13 +16,19 @@
 title: eSports Initiative
 email: esportsinitiative@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  eSports Initiative (ESI) is a student organization at The Ohio State University (OSU).
+  ESI fosters, manages, and runs eSports related events, teams, and tournaments at OSU.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://example.com" # the base hostname & protocol for your site
-#twitter_username: jekyllrb
-#github_username:  jekyll
+url: "http://esi.gg" # the base hostname & protocol for your site
+
+# Social Media
+twitter_username: ESI_OSU
+facebook_username: esportsinitiative
+instagram_username: esportsinitiative
+twitch_username: esportsinitiative
+challonge_username: esportsinitiative # users/esportsinitiative
+youtube_username: ESportsInitiative # user/ESportsInitiative
+github_username:  esportsinitiative
 
 # Build settings
 markdown: kramdown
