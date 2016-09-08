@@ -22,13 +22,22 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://esi.gg" # the base hostname & protocol for your site
 
 # Social Media
-twitter_username: ESI_OSU
-facebook_username: esportsinitiative
+twitter_username:   ESI_OSU
+facebook_username:  esportsinitiative
 instagram_username: esportsinitiative
-twitch_username: esportsinitiative
-challonge_username: esportsinitiative # users/esportsinitiative
-youtube_username: ESportsInitiative # user/ESportsInitiative
-github_username:  esportsinitiative
+twitch_username:    esportsinitiative
+challonge_username: esportsinitiative
+youtube_username:   esportsinitiative # Though actually: ESportsInitiative
+github_username:    esportsinitiative
+
+# Social Media Links
+twitter_link:       http://twitter.com/ESI_OSU
+facebook_link:      http://facebook.com/esportsinitiative
+instagram_link:     http://instagram.com/esportsinitiative
+twitch_link:        http://twitch.com/esportsinitiative
+challonge_link:     http://challonge.com/users/esportsinitiative
+youtube_link:       http://youtube.com/user/ESportsInitiative
+github_link:        http://github.com/esportsinitiative
 
 # Build settings
 markdown: kramdown

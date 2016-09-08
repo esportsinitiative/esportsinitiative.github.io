@@ -1,4 +1,4 @@
-<footer class="site-footer">
+<footer>
 
   <div class="container">
 
@@ -6,12 +6,7 @@
       <div class="col-sm-7 col-xs-12">
         <div class="row">
           <h2>{{ site.title | escape }}</h2>
-        </div>
-        <div class="row">
-          <ul class="contact-list">
-            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-            <li>2011-2016 &copy; The {{ site.title | escape }}</li>
-          </ul>
+          <p>2011-2016 &copy; The {{ site.title | escape }}</p>
         </div>
       </div>
 
@@ -20,16 +15,54 @@
           <h3>Follow Us</h3>
         </div>
         <div class="row">
-          <ul class="social-media-list">
-            {% if site.github_username %}
+          <!-- http://fontawesome.io/icons/ -->
+          <ul class="footer-links">
+            {% if site.twitch_username %}
             <li>
-              {% include icon-github.html username=site.github_username %}
+              {% include icons/icon-all.html icon="fa fa-twitch" link=site.twitch_link username=site.twitch_username %}
             </li>
             {% endif %}
 
             {% if site.twitter_username %}
             <li>
-              {% include icon-twitter.html username=site.twitter_username %}
+              {% include icons/icon-all.html icon="fa fa-twitter" link=site.twitter_link username=site.twitter_username %}
+            </li>
+            {% endif %}
+
+            {% if site.facebook_username %}
+            <li>
+              {% include icons/icon-all.html icon="fa fa-facebook-official" link=site.facebook_link username=site.facebook_username %}
+            </li>
+            {% endif %}
+
+            {% if site.instagram_username %}
+            <li>
+              {% include icons/icon-all.html icon="fa fa-instagram" link=site.instagram_link username=site.instagram_username %}
+            </li>
+            {% endif %}
+
+            {% if site.challonge_username %}
+            <li>
+              {% include icons/icon-all.html icon="fa fa-trophy" link=site.challonge_link username=site.challonge_username %}
+            </li>
+            {% endif %}
+
+            {% if site.youtube_username %}
+            <li>
+              {% include icons/icon-all.html icon="fa fa-youtube" link=site.youtube_link username=site.youtube_username %}
+            </li>
+            {% endif %}
+
+            {% if site.github_username %}
+            <li>
+              {% include icons/icon-all.html icon="fa fa-github" link=site.github_link username=site.github_username %}
+            </li>
+            {% endif %}
+
+            {% if site.email %}
+            <li>
+              {% assign email_link = "mailto:" | append: site.email %}
+              {% include icons/icon-all.html icon="fa fa-envelope" link=site.email_link username=site.email %}
             </li>
             {% endif %}
           </ul>

@@ -19,7 +19,7 @@ $brand-color:      #2a7ae2;
 // From Design team
 $gray-dark:        #54544F;
 $gray-light:       #8F8F87;
-$gray-lighter:  #9d9d9d;
+$gray-lighter:     #9d9d9d;
 $green-darker:     #00862d;
 $green-dark:       #009933;
 $green-light:      #33cc33;
@@ -29,3 +29,13 @@ $white:            #fff;
 @import "minima";
 // Import the bootstrap theme
 @import "bootstrap";
+
+// Bootstrap Fix
+body {
+  background-color: $background-color;
+  color:            $gray-lighter;
+}
+
+footer, ul {
+    list-style: none;
+}
