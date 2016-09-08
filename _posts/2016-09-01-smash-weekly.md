@@ -6,7 +6,7 @@ real-date: 2016-09-01 01:01:01 -0400
 categories: jekyll update
 location: Senate Chamber
 time: 6:30 PM - 10:30 PM
-description: 
+description: This is a Smash Weekly
 ---
 
-<p>some content</p>
+some content
