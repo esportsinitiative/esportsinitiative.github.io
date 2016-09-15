@@ -20,6 +20,7 @@ It helped us! May it help you!
 - [Bootstrap](https://getbootstrap.com/css/)
 - [Font Awesome Icons](http://fontawesome.io/icons/)
 - [Sass Bootstrap](http://kvurd.com/blog/my-jekyll-blog-setup-bootstrap-sass-pygments/)
+- [Flex Boxes <3](https://philipwalton.github.io/solved-by-flexbox/demos/vertical-centering/)
 
 Building stuff:
 
