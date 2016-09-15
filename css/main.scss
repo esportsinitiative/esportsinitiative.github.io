@@ -39,3 +39,13 @@ body {
 footer, ul {
     list-style: none;
 }
+
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.align-max {
+  max-width: 100%;
+}

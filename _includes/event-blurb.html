@@ -1,0 +1,42 @@
+<li class="post-listing">
+  <a class="post-link" href="{{ include.event.event-link | prepend: site.baseurl }}">
+    <div class="row aligner">
+      <div class="col-xs-12 col-sm-2 align-max">
+        <img src="{{ include.event.image-link }}" alt="{{ include.event.title }}" />
+      </div>
+      <div class="col-xs-12 col-sm-10">
+        <h2>
+          {{ include.event.title | escape }}
+        </h2>
+
+        <div class="row">
+          <div class="col-xs-12 col-sm-9">
+            <p>
+              <i class="fa fa-calendar-o" aria-hidden="true"></i> <span class="post-meta">{{ include.event.real-date | date: "%b %-d, %Y" }}</span>
+            </p>
+            <p>
+              <i class="fa fa-clock-o" aria-hidden="true"></i> <span class="post-meta">{{ include.event.time | escape }}</span>
+            </p>
+            <p>
+              <i class="fa fa-map-marker" aria-hidden="true"></i> <span class="post-meta">{{ include.event.location | escape }}</span>
+            </p>
+            <p>
+              <i class="fa fa-info" aria-hidden="true"></i> {{ include.event.description }}
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            {% if include.event.games %}
+              <h4>Featuring:</h4>
+              <ul>
+                {% for game in include.event.games %}
+                  <li>{{ game }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </a>
+</li>
