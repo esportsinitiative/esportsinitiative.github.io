@@ -6,6 +6,10 @@ real-date: 2016-09-01 01:01:01 -0400
 categories: jekyll update
 location: Senate Chamber
 time: 6:30 PM - 10:30 PM
+games:
+  - "SSB"
+  - "Melee"
+image-link: images/logos/esi.png
 description: This is a Smash Weekly
 ---
 
