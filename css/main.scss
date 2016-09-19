@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // Our variables
-$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font-family: "Helvetica", Helvetica, Roboto, sans-serif;
 $base-font-size:   18px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
@@ -48,4 +48,59 @@ footer, ul {
 
 .align-max {
   max-width: 100%;
+}
+
+
+
+
+
+
+.link-to-fb-logo {
+	max-height: 100px;
+}
+
+.timeline-Widget {
+	background-color: none;
+}
+
+.social-media-logo {
+  display: inline;
+  font-size: 5em;
+}
+.social-media-logo a{
+  color: #00862d;
+}
+.social-media-logo:hover a{
+  color: #00C833;
+}
+
+.site-nav .page-link {
+  color: rgb(100,100,100);
+  text-decoration: none;
+}
+.site-nav .page-link:hover {
+  color: rgb(200,200,200);
+  text-decoration: none;
+}
+
+////////
+//Sticky footer
+////////
+html, body {
+  height: 100%;
+}
+#body-container {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -225px; 
+}
+#body-container:after {
+  content: "";
+  display: block;
+}
+footer, #body-container:after {
+  height: 225px; 
+}
+footer {
+	background-color: #000;
 }

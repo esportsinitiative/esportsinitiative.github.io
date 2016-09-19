@@ -1,16 +1,155 @@
 ---
 layout: team
 title: League of Legends
-permalink: /teams/Leagueoflegends
+permalink: /teams/LeagueofLegends.html
 category: team
-logo: /images/lol_logo.png
+logo: /images/logos/lol.png
 ---
 
-<img src= "/images/lol_map.jpg" />
-<div>
-	{% for my_page in site.pages %}
-	  {% if my_page.category == "LoL-player" %}
-	  <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title | escape }}</a>
-	  {% endif %}
-	{% endfor %}
+<div class="info-message">
+	<h4>Want to be part of the action? Apply today!</h4>
+	<p>Players: <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdLi6aRM3B4kjbM60cmtYj87Jj1zy1rGT9BHC9w3wBsPIsyfw/viewform?">Application</a></p>
+	<p>For other inquiries please contact <a href="mailto:ferguson.571@osu.edu">Peter Ferguson</a> at ferguson.571@osu.edu</p>
 </div>
+
+<img id="lol-map" src= "/images/teams/lol/lol_map.jpg" />
+<div id="player-container">
+	<a id="lol-top" class="player-image" href="/teams/LeagueofLegends/Ahrun">
+		<img src= "/images/teams/lol/players/Alex.png" />
+		<h3 class="player-name">Ahrun</h3>
+	</a>
+
+	<a id="lol-jungle" class="player-image" href="/teams/LeagueofLegends/Nexevis">
+		<img src= "/images/teams/lol/players/Nexevis.png" />
+		<h3 class="player-name">Nexevis</h3>
+	</a>
+
+	<a id="lol-mid" class="player-image" href="/teams/LeagueofLegends/Peridot">
+		<img src= "/images/teams/lol/players/silhouette.png" />
+		<h3 class="player-name">Peridot</h3>
+	</a>
+
+	<a id="lol-adc" class="player-image" href="/teams/LeagueofLegends/Pustoi">
+		<h3 class="player-name">Pustoi</h3>
+		<img src= "/images/teams/lol/players/Gerald.png" />
+	</a>
+
+	<a id="lol-sup" class="player-image" href="/teams/LeagueofLegends/BaconSeeker">
+		<h3 class="player-name">BaconSeeker</h3>
+		<img src= "/images/teams/lol/players/Donny.png" />
+	</a>
+</div>
+<style>
+	.info-message {
+		background-color: rgb(20,20,20);
+		padding: 25px;
+		margin-bottom: 50px;
+	}
+
+	.info-message a:hover {
+		color: rgb(200,200,200);
+		text-decoration: none;
+	}
+
+	#player-container {
+		position: relative;
+	}
+
+	#lol-top {
+		position: absolute;
+		display: inline;
+		top: -600px;
+		left: 100px;
+	}
+	#lol-top:hover {
+		top: -622px !important;
+		left: 85px !important;
+	}
+
+	#lol-jungle {
+		position: absolute;
+		display: inline;
+		top: -500px;
+		left: 250px;
+	}
+	#lol-jungle:hover {
+		top: -525px !important;
+		left: 235px !important;
+	}
+
+	#lol-mid {
+		position: absolute;
+		display: inline;
+		top: -400px;
+		left: 385px;
+	}
+	#lol-mid:hover {
+		top: -422px !important;
+		left: 370px !important;
+	}
+
+	#lol-adc {
+		position: absolute;
+		display: inline;
+		top: -225px;
+		left: 700px;
+	}
+	#lol-adc:hover {
+		top: -325px !important;
+		left: 685px !important;
+	}
+
+	#lol-sup {
+		position: absolute;
+		display: inline;
+		top: -235px;
+		left: 550px;
+	}
+	#lol-sup:hover {
+		top: -335px !important;
+		left: 535px !important;
+	}
+
+	.player-image {
+		text-align: center;
+	}
+	.player-image:hover {
+		text-decoration: none;
+	}
+	.player-image img {
+		width: 150px;
+		height:225px;
+	}
+	.player-image:hover img {
+		width: 180px !important;
+		height: 270px !important;
+		background: radial-gradient(rgba(200,0,0,1), rgba(200,0,0,0) 80%);
+		cursor: pointer;
+	}
+	.player-image h3 {
+		display: none;
+	}
+	.player-image:hover h3 {
+		display: block;
+	}
+
+	.player-name {
+		color: #B91623 !important;
+		text-shadow:
+		    -1px -1px 0 #000,
+		    1px -1px 0 #000,
+		    -1px 1px 0 #000,
+		    1px 1px 0 #000; 
+	}
+</style>
+
+<!--<script>
+	$(function() {
+		var c = document.getElementById("canvas-lol");
+    	var ctx = c.getContext("2d");
+    	var img = document.getElementById("lol-map");
+    	ctx.drawImage(img,0,0);
+    	img = document.getElementById("lol-top");
+    	ctx.drawImage(img,50,50,150,225)
+	});
+</script>-->

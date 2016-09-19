@@ -3,69 +3,67 @@
   <div class="container">
 
     <div class="row">
-      <div class="col-sm-7 col-xs-12">
+      <div class="col-sm-5 col-xs-12">
         <div class="row">
           <h2>{{ site.title | escape }}</h2>
           <p>2011-2016 &copy; The {{ site.title | escape }}</p>
         </div>
       </div>
 
-      <div class="col-sm-5 col-xs-12">
+      <div class="col-sm-7 col-xs-12">
         <div class="row">
           <h3>Follow Us</h3>
         </div>
         <div class="row">
           <!-- http://fontawesome.io/icons/ -->
-          <ul class="footer-links">
             {% if site.twitch_username %}
-            <li>
+            <div class="social-media-logo">
               {% include icon-all.html icon="fa fa-twitch" link=site.twitch_link username=site.twitch_username %}
-            </li>
+            </div>
             {% endif %}
 
             {% if site.twitter_username %}
-            <li>
+            <div class="social-media-logo">
               {% include icon-all.html icon="fa fa-twitter" link=site.twitter_link username=site.twitter_username %}
-            </li>
+            </div>
             {% endif %}
 
             {% if site.facebook_username %}
-            <li>
+            <div class="social-media-logo">
               {% include icon-all.html icon="fa fa-facebook-official" link=site.facebook_link username=site.facebook_username %}
-            </li>
+            </div>
             {% endif %}
 
             {% if site.instagram_username %}
-            <li>
+            <div class="social-media-logo">
               {% include icon-all.html icon="fa fa-instagram" link=site.instagram_link username=site.instagram_username %}
-            </li>
+            </div>
             {% endif %}
 
             {% if site.challonge_username %}
-            <li>
+            <div class="social-media-logo">
               {% include icon-all.html icon="fa fa-trophy" link=site.challonge_link username=site.challonge_username %}
-            </li>
+            </div>
             {% endif %}
 
             {% if site.youtube_username %}
-            <li>
+            <div class="social-media-logo">
               {% include icon-all.html icon="fa fa-youtube" link=site.youtube_link username=site.youtube_username %}
-            </li>
+            </div>
             {% endif %}
 
             {% if site.github_username %}
-            <li>
+            <div class="social-media-logo">
               {% include icon-all.html icon="fa fa-github" link=site.github_link username=site.github_username %}
-            </li>
+            </div>
             {% endif %}
 
             {% if site.email %}
-            <li>
+            <div class="social-media-logo">
               {% assign email_link = "mailto:" | append: site.email %}
               {% include icon-all.html icon="fa fa-envelope" link=site.email_link username=site.email %}
-            </li>
+            </div>
             {% endif %}
-          </ul>
         </div>
       </div>
     </div>

@@ -2,9 +2,9 @@
 layout: default
 ---
 <div style="text-align: center">
-	<span class="glyphicon glyphicon-chevron-left"></span>
-	<a href="/teams/Leagueoflegends">
-		<img src="/images/lol_logo.png" />
+	<span class="glyphicon glyphicon-chevron-left" style="font-size: large; top: -1px"></span>
+	<a href="/teams/Leagueoflegends.html">
+		<img src="/images/logos/lol.png" />
 	</a>
 </div>
 
@@ -13,3 +13,22 @@ layout: default
 <div class="post-content" itemprop="articleBody">
   {{ content }}
 </div>
+
+<style>
+	.change-player-button {
+		text-align: center;
+		position: relative;
+		top: -75px;
+		border: 1px solid rgb(20,20,20);
+		background-color: rgb(50,50,50);
+		padding-top: 25px;
+		padding-bottom: 25px;
+		cursor: pointer;
+	}
+
+	.change-player-button:hover {
+		background-color: rgb(100,100,100);
+		color: rgb(200,200,200) !important;
+		text-decoration: none !important;
+	}
+</style>
