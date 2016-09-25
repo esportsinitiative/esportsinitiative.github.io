@@ -65,13 +65,13 @@ footer, ul {
 
 .social-media-logo {
   display: inline;
-  font-size: 5em;
+  font-size: 4em;
 }
-.social-media-logo a{
-  color: #00862d;
+.social-media-logo a {
+  color: $green-darker;
 }
-.social-media-logo:hover a{
-  color: #00C833;
+.social-media-logo:hover a {
+  color: $green-light;
 }
 
 .site-nav .page-link {

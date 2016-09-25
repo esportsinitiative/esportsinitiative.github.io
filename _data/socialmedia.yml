@@ -1,0 +1,52 @@
+# Social Media
+# Icons: http://fontawesome.io/icons/
+
+- service:      "twitch"
+  name:         "esportsinitiative"
+  link:         "https://twitch.com/esportsinitiative"
+  icon:         "fa fa-twitch"
+
+- service:      "twitter"
+  name:         "ESI_OSU"
+  link:         "https://twitter.com/ESI_OSU"
+  icon:         "fa fa-twitter"
+
+- service:      "facebook"
+  name:         "esportsinitiative"
+  link:         "https://facebook.com/esportsinitiative"
+  icon:         "fa fa-facebook-official"
+
+- service:      "instagram"
+  name:         "esportsinitiative"
+  link:         "https://instagram.com/esportsinitiative"
+  icon:         "fa fa-instagram"
+
+- service:      "challonge"
+  name:         "esportsinitiative"
+  link:         "https://challonge.com/users/esportsinitiative"
+  icon:         "fa fa-trophy"
+
+- service:      "youtube"
+  name:         "esportsinitiative"
+  link:         "https://youtube.com/user/ESportsInitiative"
+  icon:         "fa fa-youtube"
+
+- service:      "snapchat"
+  name:         "esiosu"
+  link:         "https://www.snapchat.com/add/esiosu"
+  icon:         "fa fa-snapchat-square"
+
+- service:      "github"
+  name:         "esportsinitiative"
+  link:         "https://github.com/esportsinitiative"
+  icon:         "fa fa-github"
+
+- service:      "email"
+  name:         "esportsinitiative@gmail.com"
+  link:         "mailto:esportsinitiative@gmail.com"
+  icon:         "fa fa-envelope"
+
+#- service:      
+#  name:         
+#  link:         
+#  icon:         

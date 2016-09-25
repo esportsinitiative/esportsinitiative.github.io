@@ -15,55 +15,10 @@
           <h3>Follow Us</h3>
         </div>
         <div class="row">
-          <!-- http://fontawesome.io/icons/ -->
-            {% if site.twitch_username %}
-            <div class="social-media-logo">
-              {% include icon-all.html icon="fa fa-twitch" link=site.twitch_link username=site.twitch_username %}
-            </div>
-            {% endif %}
-
-            {% if site.twitter_username %}
-            <div class="social-media-logo">
-              {% include icon-all.html icon="fa fa-twitter" link=site.twitter_link username=site.twitter_username %}
-            </div>
-            {% endif %}
-
-            {% if site.facebook_username %}
-            <div class="social-media-logo">
-              {% include icon-all.html icon="fa fa-facebook-official" link=site.facebook_link username=site.facebook_username %}
-            </div>
-            {% endif %}
-
-            {% if site.instagram_username %}
-            <div class="social-media-logo">
-              {% include icon-all.html icon="fa fa-instagram" link=site.instagram_link username=site.instagram_username %}
-            </div>
-            {% endif %}
-
-            {% if site.challonge_username %}
-            <div class="social-media-logo">
-              {% include icon-all.html icon="fa fa-trophy" link=site.challonge_link username=site.challonge_username %}
-            </div>
-            {% endif %}
-
-            {% if site.youtube_username %}
-            <div class="social-media-logo">
-              {% include icon-all.html icon="fa fa-youtube" link=site.youtube_link username=site.youtube_username %}
-            </div>
-            {% endif %}
-
-            {% if site.github_username %}
-            <div class="social-media-logo">
-              {% include icon-all.html icon="fa fa-github" link=site.github_link username=site.github_username %}
-            </div>
-            {% endif %}
-
-            {% if site.email %}
-            <div class="social-media-logo">
-              {% assign email_link = "mailto:" | append: site.email %}
-              {% include icon-all.html icon="fa fa-envelope" link=site.email_link username=site.email %}
-            </div>
-            {% endif %}
+          <!-- sms for "Social Media Site" -->
+          {% for sms in site.data.socialmedia %} 
+            {% include sm-link.html sm=sms %}
+          {% endfor %}
         </div>
       </div>
     </div>
