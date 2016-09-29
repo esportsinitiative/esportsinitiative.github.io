@@ -50,9 +50,34 @@ footer, ul {
   max-width: 100%;
 }
 
+.hp-games {
+  height: 100px;
+}
 
+  @media (min-width: $screen-sm-min) {
+    .hp-games {
+      height:150px;
+    }
+  } 
 
+a:hover .hp-games {
+  background-color: $gray-lighter;
+}
 
+.pad-sides {
+  padding-left:  10px;
+  padding-right: 10px;
+}
+
+.event-list {
+  max-height: 1000px;
+  overflow: scroll;
+}
+
+.hp-games-hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
 
 .link-to-fb-logo {
