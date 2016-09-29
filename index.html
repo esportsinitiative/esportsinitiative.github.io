@@ -12,81 +12,61 @@ layout: default
   {% assign hearthstone = site.data.games["hearthstone"] %}
   {% assign overwatch = site.data.games["overwatch"] %}
   <div class="row">
-    <div class="col-sm-5 col-xs-12 row">
-      {% include templates/hp-gs.html game=dota %}
-      {% include templates/hp-gs.html game=lol %}
-      {% include templates/hp-gs.html game=smash %}
+    <div class="col-xs-12">
+      <h2 class="text-center">Games</h2>
+      <hr class="row hp-games-hr" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-5 col-xs-12">
+      <div class="row">
+        {% include templates/hp-gs.html game=dota %}
+        {% include templates/hp-gs.html game=lol %}
+        {% include templates/hp-gs.html game=smash %}
+      </div>
     </div>
     <div class="col-sm-2 hidden visible-sm visible-md visible-lg">
       {% include templates/hp-gs.html game=esi classes="pad-sides" %}
     </div>
-    <div class="col-sm-5 col-xs-12 row">
-      {% include templates/hp-gs.html game=csgo %}
-      {% include templates/hp-gs.html game=hearthstone %}
-      {% include templates/hp-gs.html game=overwatch %}      
+    <div class="col-sm-5 col-xs-12">
+      <div class="row">
+        {% include templates/hp-gs.html game=csgo %}
+        {% include templates/hp-gs.html game=hearthstone %}
+        {% include templates/hp-gs.html game=overwatch %}
+      </div>      
+    </div>
+    <div class="col-xs-12 row">
+      <hr class="hp-games-hr" />
     </div>
   </div>
 
+  <div class="row">
 
-  <div style="height: 480px; text-align: center; vertical-align: middle; border: 1px solid white; margin-top: 50px">
-    <iframe style="width: 100%; height: 100%" src="https://www.youtube.com/embed/4a1_Me-Nywg" frameborder="0" allowfullscreen></iframe>
-  </div>
+    <div class="col-xs-12 col-sm-8 col-sm-push-4 event-list">
+      <h1>Upcoming Events</h1>
+      <ul class="post-list">
+        {% for anEvent in site.posts reversed %}
+          {% include event-blurb.html event=anEvent %}
+        {% endfor %}
+      </ul>
+      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    </div>
 
-  <div class="row" style="margin-top: 25px">
-    <div class="col-md-6">
-      <div style="text-align: center">
-        <h1>Are you a gamer?</h1>
+    <div class="col-xs-12 col-sm-4 col-sm-pull-8">
+      <div>
+        <h1>About</h1>
+        <p>The eSports Initiative (ESI) is a student organization at The Ohio State University dedicated to running casual and competitive gaming events.</p>
       </div>
-      <p>The eSports Initiative (ESI) is first and foremost passionate about gaming. We hold casual and competitive events to expand the gaming community at The Ohio State University and throughout Columbus. Our goal is to use gaming as a means to directly impact our community. Learn more about our Events and main Games by visiting their respective pages.</p>
-      <hr />
-      <div style="text-align: center">
-        <h1>Interested in learning more?</h1>
-        <p>Join one of our many facebook groups:</p>
-        <div style="margin: 25px">
-          <a href="https://www.facebook.com/groups/419171418251335/634393223395819/">
-            <img class="link-to-fb-logo" src="/images/logos/esi.png" />
-          </a>
-        </div>
-        <div style="margin: 25px">
-          <a href="http://go.osu.edu/osulol">
-            <img class="link-to-fb-logo" src="/images/logos/lol.png" />
-          </a>
-        </div>
-        <div style="margin: 25px;">
-          <a href="http://go.osu.edu/osuoverwatch">
-            <img class="link-to-fb-logo" src="/images/logos/overwatch.png" />
-          </a>
-        </div>
-        <div style="margin: 25px;">
-          <a href="http://go.osu.edu/osucsgo">
-            <img class="link-to-fb-logo" src="/images/logos/csgo.png" />
-          </a>
-        </div>
-        <div style="margin: 25px;">
-          <a href="http://go.osu.edu/osuhearthstone">
-            <img class="link-to-fb-logo" src="/images/logos/hearthstone.png" />
-          </a>
-        </div>
-        <div style="margin: 25px;">
-          <a href="http://go.osu.edu/osudota">
-            <img class="link-to-fb-logo" src="/images/logos/dota2.png" />
-          </a>
-        </div>
+
+      <div>
+        <h1>Competitive Teams</h1>
+        <iframe style="width: 100%; height: 100%" src="https://www.youtube.com/embed/4a1_Me-Nywg" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <div>
+        <h1>Sponsors</h1>
       </div>
     </div>
-    <div class="col-md-5 col-md-offset-1">
-      <a class="twitter-timeline" data-height="925" data-theme="dark" data-chrome="transparent nofooter" href="https://twitter.com/ESI_OSU">Tweets by ESI_OSU</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
+
   </div>
-
-  <h1 class="page-heading">Upcoming Events</h1>
-
-  <ul class="post-list">
-    {% for anEvent in site.posts reversed %}
-      {% include event-blurb.html event=anEvent %}
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>

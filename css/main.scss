@@ -69,6 +69,16 @@ a:hover .hp-games {
   padding-right: 10px;
 }
 
+.event-list {
+  max-height: 1000px;
+  overflow: scroll;
+}
+
+.hp-games-hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 
 .link-to-fb-logo {
 	max-height: 100px;
