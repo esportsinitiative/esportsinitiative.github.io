@@ -4,6 +4,30 @@ layout: default
 
 <div class="home">
 
+  {% assign dota = site.data.games["dota"] %}
+  {% assign lol = site.data.games["lol"] %}
+  {% assign smash = site.data.games["smash"] %}
+  {% assign esi = site.data.games["esi"] %}
+  {% assign csgo = site.data.games["csgo"] %}
+  {% assign hearthstone = site.data.games["hearthstone"] %}
+  {% assign overwatch = site.data.games["overwatch"] %}
+  <div class="row">
+    <div class="col-xs-5 row">
+      {% include templates/hp-gs.html game=dota %}
+      {% include templates/hp-gs.html game=lol %}
+      {% include templates/hp-gs.html game=smash %}
+    </div>
+    <div class="col-xs-2">
+      {% include templates/hp-gs.html game=esi classes="pad-sides" %}
+    </div>
+    <div class="col-xs-5 row">
+      {% include templates/hp-gs.html game=csgo %}
+      {% include templates/hp-gs.html game=hearthstone %}
+      {% include templates/hp-gs.html game=overwatch %}      
+    </div>
+  </div>
+
+
   <div style="height: 480px; text-align: center; vertical-align: middle; border: 1px solid white; margin-top: 50px">
     <iframe style="width: 100%; height: 100%" src="https://www.youtube.com/embed/4a1_Me-Nywg" frameborder="0" allowfullscreen></iframe>
   </div>
