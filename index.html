@@ -12,15 +12,15 @@ layout: default
   {% assign hearthstone = site.data.games["hearthstone"] %}
   {% assign overwatch = site.data.games["overwatch"] %}
   <div class="row">
-    <div class="col-xs-5 row">
+    <div class="col-sm-5 col-xs-12 row">
       {% include templates/hp-gs.html game=dota %}
       {% include templates/hp-gs.html game=lol %}
       {% include templates/hp-gs.html game=smash %}
     </div>
-    <div class="col-xs-2">
+    <div class="col-sm-2 hidden visible-sm visible-md visible-lg">
       {% include templates/hp-gs.html game=esi classes="pad-sides" %}
     </div>
-    <div class="col-xs-5 row">
+    <div class="col-sm-5 col-xs-12 row">
       {% include templates/hp-gs.html game=csgo %}
       {% include templates/hp-gs.html game=hearthstone %}
       {% include templates/hp-gs.html game=overwatch %}      

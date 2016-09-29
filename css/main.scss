@@ -51,8 +51,14 @@ footer, ul {
 }
 
 .hp-games {
-  height: 150px;
+  height: 100px;
 }
+
+  @media (min-width: $screen-sm-min) {
+    .hp-games {
+      height:150px;
+    }
+  } 
 
 a:hover .hp-games {
   background-color: $gray-lighter;
