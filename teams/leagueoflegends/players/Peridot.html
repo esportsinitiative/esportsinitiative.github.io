@@ -1,0 +1,10 @@
+---
+layout: player
+title: Peridot
+---
+
+{% assign player = site.data.teams.leagueoflegends["Peridot"] %}
+{% assign player-left = site.data.teams.leagueoflegends["Nexevis"] %}
+{% assign player-right = site.data.teams.leagueoflegends["BaconSeeker"] %}
+
+{% include player.html player=player player-left=player-left player-right=player-right %}
