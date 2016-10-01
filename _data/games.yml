@@ -1,46 +1,41 @@
 esi:
   name:         "esi"
   name-display: "eSports Initiative"
-  image:        "/images/logos/esi.png"
+  image:        "/images/logos/esi/esi.png"
   link:         "#"
 
-lol:
-  name:         "lol"
+leagueoflegends:
+  name:         "leagueoflegends"
   name-display: "League of Legends"
-  image:        "/images/logos/lol.png"
+  image:        "/images/logos/games/leagueoflegends.png"
   link:         "#"
 
 smash:
   name:         "smash"
   name-display: "Smash Brothers"
-  image:        "/images/logos/esi.png" # Need Logo :/
+  image:        "/images/logos/esi/esi.png" # Need Logo :/
   link:         "#"
 
 dota:
   name:         "dota"
   name-display: "Dota 2"
-  image:        "/images/logos/dota2.png"
+  image:        "/images/logos/games/dota.png"
   link:         "#"
 
 overwatch:
   name:         "overwatch"
   name-display: "Overwatch"
-  image:        "/images/logos/overwatch.png"
+  image:        "/images/logos/games/overwatch.png"
   link:         "#"
 
 hearthstone:
   name:         "hearthstone"
   name-display: "Hearthstone"
-  image:        "/images/logos/hearthstone.png"
+  image:        "/images/logos/games/hearthstone.png"
   link:         "#"
 
 csgo:
   name:         "csgo"
   name-display: "CS:GO"
-  image:        "/images/logos/csgo.png"
+  image:        "/images/logos/games/csgo.png"
   link:         "#"
-  
-# - name:         
-#   name-display: 
-#   image:        
-#   link:         
