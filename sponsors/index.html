@@ -1,0 +1,14 @@
+---
+layout: default
+title: Sponsors
+permalink: /sponsors/
+category: menu-bar
+---
+
+<div>
+
+	{% for sponsor in site.data.sponsors %}
+		{% include info-box.html info=sponsor %}
+	{% endfor %}
+
+</div>
