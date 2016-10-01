@@ -1,8 +1,6 @@
 ---
 layout: team
-title: League of Legends
-permalink: /teams/LeagueofLegends.html
-category: team
+title: "League of Legends"
 logo: /images/logos/lol.png
 ---
 
@@ -12,32 +10,22 @@ logo: /images/logos/lol.png
 	<p>For other inquiries please contact <a href="mailto:ferguson.571@osu.edu">Peter Ferguson</a> at ferguson.571@osu.edu</p>
 </div>
 
-<img id="lol-map" src= "/images/teams/lol/lol_map.jpg" />
+<img src= "/images/teams/lol/lol-map.jpg" />
 <div id="player-container">
-	<a id="lol-top" class="player-image" href="/teams/LeagueofLegends/Ahrun">
-		<img src= "/images/teams/lol/players/Alex.png" />
-		<h3 class="player-name">Ahrun</h3>
-	</a>
+	{% assign players = site.data.teams.leagueoflegends["players"] %}
+	{% for pname in players %}
+		{% assign player = site.data.teams.leagueoflegends[pname] %}
 
-	<a id="lol-jungle" class="player-image" href="/teams/LeagueofLegends/Nexevis">
-		<img src= "/images/teams/lol/players/Nexevis.png" />
-		<h3 class="player-name">Nexevis</h3>
-	</a>
-
-	<a id="lol-mid" class="player-image" href="/teams/LeagueofLegends/Peridot">
-		<img src= "/images/teams/lol/players/silhouette.png" />
-		<h3 class="player-name">Peridot</h3>
-	</a>
-
-	<a id="lol-adc" class="player-image" href="/teams/LeagueofLegends/Pustoi">
-		<h3 class="player-name">Pustoi</h3>
-		<img src= "/images/teams/lol/players/Gerald.png" />
-	</a>
-
-	<a id="lol-sup" class="player-image" href="/teams/LeagueofLegends/BaconSeeker">
-		<h3 class="player-name">BaconSeeker</h3>
-		<img src= "/images/teams/lol/players/Donny.png" />
-	</a>
+		<a id="{{ player.position | downcase | prepend: 'lol-' }}" class="player-image" href="{{ player.link | prepend: site.baseurl }}">
+			{% if player.position == "Support" or player.position == "ADC" %}
+				<h3 class="player-name">{{ player.name }}</h3>
+				<img src="{{ player.image | prepend: site.baseurl }}" alt="{{ player.name }}">
+			{% else %}
+				<img src="{{ player.image | prepend: site.baseurl }}" alt="{{ player.name }}">
+				<h3 class="player-name">{{ player.name }}</h3>
+			{% endif %}
+		</a>
+	{% endfor %}
 </div>
 <style>
 	.info-message {
@@ -99,13 +87,13 @@ logo: /images/logos/lol.png
 		left: 685px !important;
 	}
 
-	#lol-sup {
+	#lol-support {
 		position: absolute;
 		display: inline;
 		top: -235px;
 		left: 550px;
 	}
-	#lol-sup:hover {
+	#lol-support:hover {
 		top: -335px !important;
 		left: 535px !important;
 	}

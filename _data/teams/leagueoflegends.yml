@@ -1,0 +1,41 @@
+players:
+  - "Ahrun"
+  - "Nexevis"
+  - "Peridot"
+  - "BaconSeeker"
+  - "Pustoi"
+
+Ahrun:
+  name:         "Ahrun"
+  position:     "Top"
+  link:         "/teams/leagueoflegends/players/Ahrun.html"
+  image:        "/images/teams/lol/players/Ahrun.png"
+  discription:  "temp"
+
+Nexevis:
+  name:         "Nexevis"
+  position:     "Jungle"
+  link:         "/teams/leagueoflegends/players/Nexevis.html"
+  image:        "/images/teams/lol/players/Nexevis.png"
+  discription:  "temp"
+
+Peridot:
+  name:         "Peridot"
+  position:     "Mid"
+  link:         "/teams/leagueoflegends/players/Peridot.html"
+  image:        "/images/teams/lol/players/silhouette.png"
+  discription:  "temp"
+
+BaconSeeker:
+  name:         "BaconSeeker"
+  position:     "Support"
+  link:         "/teams/leagueoflegends/players/BaconSeeker.html"
+  image:        "/images/teams/lol/players/BaconSeeker.png"
+  discription:  "Donny ‘BaconSeeker’ Campbell is a senior at The Ohio State University majoring in Mechanical Engineering. In League of Legends, BaconSeeker is a Diamond 1 playmaking support. Capable of playing a variety of styles, BaconSeeker can serve as the team’s primary engage on his signature Alistar, or provide more support and peel for his backline on his favorite champion, Janna.  As Ohio State’s Support, BaconSeeker has many responsibilities including vision control throughout the game and assisting in shot calling in the mid and late game. His aggressive tendencies make him a formidable foe during laning phase due to his constant harass and trading patterns. Through vision, BaconSeeker lays the foundation for his team’s victory while his intelligent team fighting can turn the tides in close games."
+
+Pustoi:
+  name:         "Pustoi"
+  position:     "ADC"
+  link:         "/teams/leagueoflegends/players/Pustoi.html"
+  image:        "/images/teams/lol/players/Pustoi.png"
+  discription:  "Gerald 'Pustoi' Richland is a senior at The Ohio State University majoring in economics. In League of Legends, Pustoi is a high diamond AD Carry, and has been for the past 3 seasons. As one half of Ohio State University's bot lane, Pustoi is tasked with outputting as much damage as possible while staying out of harm’s way. His knowledge of bot lane match ups allows Pustoi to excel in the laning phase while his safe positioning enables him to shred the enemy frontline during team fights. On some of his favorite champions like Lucian and Ezreal, Pustoi can clean up skirmishes and push his team to victory."

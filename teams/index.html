@@ -1,0 +1,14 @@
+---
+layout: default
+title: Teams
+category: menu-bar
+---
+
+<div>
+
+	{% for team in site.data.teams.teams %}
+		{% assign game = site.data.games[team.game] %}
+		{% include info-box.html info=team link=game.name image=game.image %}
+	{% endfor %}
+
+</div>
