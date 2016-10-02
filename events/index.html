@@ -1,0 +1,11 @@
+---
+layout: default
+title: Events
+category: menu-bar
+---
+
+<ul class="post-list">
+  {% for event in site.events reversed %}
+    {% include event-blurb.html event=event %}
+  {% endfor %}
+</ul>

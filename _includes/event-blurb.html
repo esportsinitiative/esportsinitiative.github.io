@@ -1,8 +1,8 @@
 <li class="post-listing">
-  <a class="post-link" href="{{ include.event.event-link | prepend: site.baseurl }}">
+  <a class="post-link" href="{{ include.event.url | prepend: site.baseurl }}">
     <div class="row aligner">
       <div class="col-xs-12 col-sm-2 align-max">
-        <img src="{{ include.event.image-link }}" alt="{{ include.event.title }}" />
+        <img src="{{ include.event.image-link | prepend: site.baseurl }}" alt="{{ include.event.title }}" />
       </div>
       <div class="col-xs-12 col-sm-10">
         <h2>
@@ -12,10 +12,10 @@
         <div class="row">
           <div class="col-xs-12 col-sm-9">
             <p>
-              <i class="fa fa-calendar-o" aria-hidden="true"></i> <span class="post-meta">{{ include.event.real-date | date: "%b %-d, %Y" }}</span>
+              <i class="fa fa-calendar-o" aria-hidden="true"></i> <span class="post-meta">{{ include.event.date | date: "%b %-d, %Y" }}</span>
             </p>
             <p>
-              <i class="fa fa-clock-o" aria-hidden="true"></i> <span class="post-meta">{{ include.event.time | escape }}</span>
+              <i class="fa fa-clock-o" aria-hidden="true"></i> <span class="post-meta">{{ include.event.date | date: "%I:%M %p" }} - {{ include.event.date-end | date: "%I:%M %p" }}</span>
             </p>
             <p>
               <i class="fa fa-map-marker" aria-hidden="true"></i> <span class="post-meta">{{ include.event.location | escape }}</span>
