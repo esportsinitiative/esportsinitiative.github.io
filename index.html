@@ -45,8 +45,8 @@ layout: default
     <div class="col-xs-12 col-sm-8 col-sm-push-4 event-list">
       <h1>Upcoming Events</h1>
       <ul class="post-list">
-        {% for anEvent in site.posts reversed limit:6 %}
-          {% include event-blurb.html event=anEvent %}
+        {% for event in site.events reversed limit:6 %}
+          {% include event-blurb.html event=event %}
         {% endfor %}
       </ul>
       <p class="rss-subscribe">subscribe <a href="{{ '/feed.xml' | prepend: site.baseurl }}">via RSS</a></p>
