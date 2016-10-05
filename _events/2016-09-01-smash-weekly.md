@@ -16,5 +16,9 @@ ticket-link:
 rules-link: 
 description: "Smash & Grab Weekly #1"
 ---
+# Smash Weekly
 
+- hi
+- bye
+- tie
 some content
