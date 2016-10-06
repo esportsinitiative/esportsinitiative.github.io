@@ -13,7 +13,7 @@ leagueoflegends:
 smash:
   name:         "smash"
   name-display: "Smash Brothers"
-  image:        "/images/logos/esi/esi.png" # Need Logo :/
+  image:        "/images/logos/games/smash.png"
   link:         "#"
 
 dota:
