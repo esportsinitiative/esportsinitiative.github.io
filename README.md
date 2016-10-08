@@ -4,10 +4,10 @@ The 5th iteration of ESI website. Main goals:
 - [x] Static site hosted on GitHub Pages
 - [x] Easy content creation and editing
 - [x] Pages for:
-  - [ ] Events
-  - [ ] Sponsors
-  - [ ] Teams
-  - [ ] Games
+  - [x] Events
+  - [x] Sponsors
+  - [x] Teams
+  - [x] Games
   - [ ] Short Links
 
 All easily solved and maintained by ***Jekyll!***
@@ -27,7 +27,7 @@ All easily solved and maintained by ***Jekyll!***
   - **NOTICE**: If you installed [GitHub for Desktop](https://desktop.github.com/) you could clone through that for simplicity :)
 4. Navigate to the project folder. (Command `pwd` should print something like `.../esportsinitiative.github.io/`)
 5. Bring up the Jekyll site locally: `bundle exec jekyll serve`
-6. Navigate to the site: `http://localhost:4000`
+6. Navigate to the site: `http://127.0.0.1:4000`
 
 # Helpful Stuff:
 It helped us! May it help you!
