@@ -5,13 +5,15 @@ layout: default
 <section>
 	
 	<header class="row">
-		<div class="col-sm-6 col-sm-offset-3 col-xs-12 col-xs-offset-0">
-			<img src="{{ game.image }}" alt="{{ game.name-display }}">
+		<div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-3 aligner game-image">
+			<div class="align-max">
+				<img src="{{ game.image }}" alt="{{ game.name-display }}">
+			</div>
 		</div>
 	</header>
 
 	<div class="row">
-		<div class="col-sm-6 col-xs-12">
+		<div class="col-xs-12 col-sm-6">
 			<h1>{{ game.name-display }}</h1>
 			<div>
 				<h3>Community involvement:</h3>
@@ -23,7 +25,7 @@ layout: default
 				{{ content }}
 			</div>
 		</div>
-		<div class="col-sm-6 col-xs-12">
+		<div class="col-xs-12 col-sm-6">
 			<h3>{{ game.name-display }} Events</h3>
 			<ul class="post-list">
 				{% assign games = site.events | where:"games",game.name %}
