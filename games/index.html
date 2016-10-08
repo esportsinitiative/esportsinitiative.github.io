@@ -1,0 +1,45 @@
+---
+layout: default
+title: Games
+category: menu-bar
+---
+
+<div>
+  
+  {% assign dota = site.data.games["dota"] %}
+  {% assign leagueoflegends = site.data.games["leagueoflegends"] %}
+  {% assign smash = site.data.games["smash"] %}
+  {% assign esi = site.data.games["esi"] %}
+  {% assign csgo = site.data.games["csgo"] %}
+  {% assign hearthstone = site.data.games["hearthstone"] %}
+  {% assign overwatch = site.data.games["overwatch"] %}
+  <div class="row">
+    <div class="col-xs-12">
+      <h2 class="text-center">Games</h2>
+      <hr class="row hp-games-hr" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-5 col-xs-12">
+      <div class="row">
+        {% include templates/hp-gs.html game=dota %}
+        {% include templates/hp-gs.html game=leagueoflegends %}
+        {% include templates/hp-gs.html game=smash %}
+      </div>
+    </div>
+    <div class="col-sm-2 hidden visible-sm visible-md visible-lg">
+      {% include templates/hp-gs.html game=esi classes="pad-sides" %}
+    </div>
+    <div class="col-sm-5 col-xs-12">
+      <div class="row">
+        {% include templates/hp-gs.html game=csgo %}
+        {% include templates/hp-gs.html game=hearthstone %}
+        {% include templates/hp-gs.html game=overwatch %}
+      </div>      
+    </div>
+    <div class="col-xs-12 row">
+      <hr class="hp-games-hr" />
+    </div>
+  </div>
+
+</div>
