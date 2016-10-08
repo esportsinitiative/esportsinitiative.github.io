@@ -71,7 +71,8 @@ a:hover .hp-games {
 
 .event-list {
   max-height: 1000px;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .hp-games-hr {
