@@ -25,6 +25,9 @@ collections:
   events:
     output: true
     permalink: /events/:year/:month/:day/:title/
+  games:
+    output: true
+    permalink: /games/:title/
 
 # Build settings
 markdown: kramdown
