@@ -79,6 +79,17 @@ a:hover .hp-games {
   margin-bottom: 0px;
 }
 
+.game-image {
+  height: 300px;
+}
+
+  .game-image > .align-max {
+    width: 100%;
+  }
+
+  .game-image img {
+    width: 100%;
+  }
 
 .link-to-fb-logo {
 	max-height: 100px;
