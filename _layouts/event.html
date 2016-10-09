@@ -3,13 +3,59 @@ layout: default
 ---
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
+  <header class="row">
+		<div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-3 aligner game-image">
+			<div class="align-max">
+				<img src="{{ page.image-link }}" alt="{{ page.title }}">
+			</div>
+		</div>
+	</header>
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-9">
+			<h1>{{ page.title }}</h1>
+      <div>
+        <p>
+          <i class="fa fa-calendar-o" aria-hidden="true"></i> <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</span>
+        </p>
+        <p>
+          <i class="fa fa-clock-o" aria-hidden="true"></i> <span class="post-meta">{{ page.date | date: "%I:%M %p" }} - {{ page.date-end | date: "%I:%M %p" }}</span>
+        </p>
+        <p>
+          <i class="fa fa-map-marker" aria-hidden="true"></i> <span class="post-meta">{{ page.location | escape }}</span>
+        </p>
+      </div>
+			<div>
+				{{ content }}
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-3">
+      <div>
+        <h3>{{ game.name-display }} Links</h3>
+        <ul class="post-list">
+          <li><a href="{{ page.event-link }}">Event</a></li>
+          <li><a href="{{ page.ticket-link }}">Ticket</a></li>
+          <li><a href="{{ page.rules-link }}">Rules</a></li>
+        </ul>
+      </div>
+			<div>
+        <h3>Games:</h3>
+        <ul class="post-list">
+          {% for game-name in page.games %}
+            {% assign game = site.data.games[game-name] %}
+            <li><a href="{{ game.link }}">{{ game.name-display }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div>
+        <h3>Tags:</h3>
+        <ul class="post-list">
+          {% for tag in page.tags %}
+            <li>{{ tag }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+		</div>
+	</div>
 
 </article>

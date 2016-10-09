@@ -82,14 +82,17 @@ a:hover .hp-games {
 
 .game-image {
   height: 300px;
+  max-height: 300px;
 }
 
   .game-image > .align-max {
     width: 100%;
+    max-height: inherit;
   }
 
   .game-image img {
     width: 100%;
+    max-height: inherit
   }
 
 .link-to-fb-logo {
