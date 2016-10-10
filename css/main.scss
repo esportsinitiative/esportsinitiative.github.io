@@ -36,7 +36,7 @@ body {
   color:            $gray-lighter;
 }
 
-footer, ul {
+footer > ul {
     list-style: none;
 }
 
@@ -58,7 +58,7 @@ footer, ul {
     .hp-games {
       height:150px;
     }
-  } 
+  }
 
 a:hover .hp-games {
   background-color: $gray-lighter;
@@ -165,14 +165,14 @@ html, body {
 #body-container {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -225px; 
+  margin-bottom: -225px;
 }
 #body-container:after {
   content: "";
   display: block;
 }
 footer, #body-container:after {
-  height: 225px; 
+  height: 225px;
 }
 footer {
 	background-color: #000;
