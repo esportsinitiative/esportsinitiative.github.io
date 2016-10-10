@@ -1,12 +1,22 @@
 ---
-layout: event
+layout: "event"
 title:  "General Meeting"
-date:   2016-08-19 19:25:23 -0400
-real-date: 2016-11-06 01:01:01 -0400
-categories: jekyll update
-location: Round Meeting Room
-time: 6:00 PM - 7:00 PM
-description: 
+date:   2016-11-06 18:00:00 -0000
+date-end:
+categories: "event"
+location: "Round Meeting Room, Ohio Union"
+games:
+- "esi"
+tags:
+- "general"
+- "meeting"
+image-link: "/images/logos/esi/esi.png"
+event-link:
+ticket-link:
+rules-link:
+description: "General meeting for all interested."
 ---
+# General Meeting
 
-<p>some content</p>
+
+A general meeting for all interested in helping ESI.

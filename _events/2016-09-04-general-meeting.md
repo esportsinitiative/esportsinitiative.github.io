@@ -1,7 +1,7 @@
 ---
 layout: "event"
 title:  "General Meeting"
-date:   2016-09-04 19:00:00 -0000
+date:   2016-09-04 18:00:00 -0000
 date-end:
 categories: "event"
 location: "Senate Chamber"
@@ -19,4 +19,4 @@ description: "General meeting for all interested."
 # General Meeting
 
 
-some content
+A general meeting for all interested in helping ESI.
