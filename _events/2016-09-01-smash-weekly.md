@@ -10,10 +10,10 @@ games:
 - "melee"
 tags:
 - "something"
-image-link: "/images/logos/esi/esi.png"
+image-link: "/images/events/smashgrab.png"
 event-link:
 ticket-link:
-rules-link: 
+rules-link:
 description: "Smash & Grab Weekly #1"
 ---
 # Smash Weekly
