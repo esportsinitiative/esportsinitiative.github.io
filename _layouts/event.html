@@ -15,15 +15,7 @@ layout: default
 		<div class="col-xs-12 col-sm-9">
 			<h1>{{ page.title }}</h1>
       <div>
-        <p>
-          <i class="fa fa-calendar-o" aria-hidden="true"></i> <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}</span>
-        </p>
-        <p>
-          <i class="fa fa-clock-o" aria-hidden="true"></i> <span class="post-meta">{{ page.date | date: "%I:%M %p" }} - {{ page.date-end | date: "%I:%M %p" }}</span>
-        </p>
-        <p>
-          <i class="fa fa-map-marker" aria-hidden="true"></i> <span class="post-meta">{{ page.location | escape }}</span>
-        </p>
+        {% include templates/event-summary.html date=page.date date-end=page.date-end location=page.location %}
       </div>
 			<div>
 				{{ content }}
