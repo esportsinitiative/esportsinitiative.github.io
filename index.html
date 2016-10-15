@@ -67,8 +67,17 @@ layout: default
 
       <div>
         <h1>Sponsors</h1>
+        <div class="row">
+          {% for sponsor in site.data.sponsors %}
+            <div class="col-xs-6 image-padding">
+              <div class="sponsor-logo-esi aligner">
+                {% include templates/image-link.html info=sponsor %}   
+              </div>
+            </div>
+          {% endfor %}
+        </div>
       </div>
     </div>
-
   </div>
+
 </div>
