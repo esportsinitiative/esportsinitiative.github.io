@@ -10,12 +10,6 @@ $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #222;
-$brand-color:      #2a7ae2;
-
 // From Design team
 $gray-dark:        #54544F;
 $gray-light:       #8F8F87;
@@ -24,7 +18,16 @@ $green-darker:     #00862d;
 $green-dark:       #009933;
 $green-light:      #33cc33;
 $black:            #222;
+$black-darker:     #111;
 $white:            #fff;
+
+// Other
+$spacing-unit:     30px;
+
+$text-color:       $black-darker;
+$background-color: $black;
+$brand-color:      #2a7ae2;
+
 
 @import "minima";
 // Import the bootstrap theme
@@ -36,9 +39,14 @@ body {
   color:            $gray-lighter;
 }
 
-footer > ul {
-    list-style: none;
+footer {
+  background-color: $black-darker;
+  padding: 5px 20px;
 }
+
+  footer > ul {
+    list-style: none;
+  }
 
 .aligner {
   display: flex;
@@ -154,26 +162,4 @@ a:hover .hp-games {
   display: inline-block;
   vertical-align: middle;  /* vertical alignment of the inline element */
   font: 16px/1 Arial sans-serif;        /* <-- reset the font property */
-}
-
-////////
-//Sticky footer
-////////
-html, body {
-  height: 100%;
-}
-#body-container {
-  min-height: 100%;
-  /* equal to footer height */
-  margin-bottom: -225px;
-}
-#body-container:after {
-  content: "";
-  display: block;
-}
-footer, #body-container:after {
-  height: 225px;
-}
-footer {
-	background-color: #000;
 }
