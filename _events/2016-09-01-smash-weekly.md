@@ -10,7 +10,7 @@ games:
 - "melee"
 tags:
 - "something"
-image-link: "/images/events/smashgrab.png"
+image-link: "/images/logos/events/smashgrab.png"
 event-link:
 ticket-link:
 rules-link:

@@ -1,22 +1,12 @@
-<div class="col-md-4" style="margin-top: 50px">
+  <div class="col-md-4" style="margin-top: 50px">
     <div class="sponsor-logo-display">
-        {% if include.link != null %}
-        <a href="{{ include.link }}">
-        {% else %}
-        <a href="{{ include.info.link }}">
-        {% endif %}
-            {% if include.image != null %}
-            <img src="{{ include.image | prepend: site.baseurl }}" />
-            {% else %}
-            <img src="{{ include.info.image | prepend: site.baseurl }}" />
-            {% endif %}
-        </a>
+      {% include templates/image-link.html info=include.info %}   
     </div>
     <div class="sponsor-desc">
-        {% if include.discription != null %}
+      {% if include.discription != null %}
         <p>{{ include.discription }}</p>
-        {% else %}
+      {% else %}
         <p>{{ include.info.discription }}</p>
-        {% endif %}
+      {% endif %}
     </div>
-</div>
+  </div>

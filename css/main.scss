@@ -11,6 +11,7 @@ $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
 // From Design team
+$gray-darker:      #323232;
 $gray-dark:        #54544F;
 $gray-light:       #8F8F87;
 $gray-lighter:     #9d9d9d;
@@ -48,6 +49,14 @@ footer {
     list-style: none;
   }
 
+.carousel-inner {
+  max-height: 400px !important;
+}
+
+  .carousel-inner > .item > a > img {
+    width: 100%;
+  } 
+
 .aligner {
   display: flex;
   align-items: center;
@@ -71,6 +80,21 @@ footer {
 a:hover .hp-games {
   background-color: $gray-lighter;
 }
+
+.image-padding {
+  padding: 10px;
+}
+
+$sponsor-logo-esi-height: 100px;
+.sponsor-logo-esi {
+  background-color: $gray-darker;
+  height: $sponsor-logo-esi-height;
+  padding: 10px;
+}
+
+  .sponsor-logo-esi img {
+    max-height: $sponsor-logo-esi-height - 20;
+  }
 
 .pad-sides {
   padding-left:  10px;

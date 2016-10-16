@@ -4,6 +4,10 @@ layout: default
 
 <div class="home">
 
+  <div class="row">
+    {% include image-carousel.html %}
+  </div>
+
   {% assign dota = site.data.games["dota"] %}
   {% assign leagueoflegends = site.data.games["leagueoflegends"] %}
   {% assign smash = site.data.games["smash"] %}
@@ -13,7 +17,6 @@ layout: default
   {% assign overwatch = site.data.games["overwatch"] %}
   <div class="row">
     <div class="col-xs-12">
-      <h2 class="text-center">Games</h2>
       <hr class="row hp-games-hr" />
     </div>
   </div>
@@ -35,8 +38,8 @@ layout: default
         {% include templates/hp-gs.html game=overwatch %}
       </div>      
     </div>
-    <div class="col-xs-12 row">
-      <hr class="hp-games-hr" />
+    <div class="col-xs-12">
+      <hr class="row hp-games-hr" />
     </div>
   </div>
 
@@ -67,8 +70,17 @@ layout: default
 
       <div>
         <h1>Sponsors</h1>
+        <div class="row">
+          {% for sponsor in site.data.sponsors %}
+            <div class="col-xs-6 image-padding">
+              <div class="sponsor-logo-esi aligner">
+                {% include templates/image-link.html info=sponsor %}   
+              </div>
+            </div>
+          {% endfor %}
+        </div>
       </div>
     </div>
-
   </div>
+
 </div>

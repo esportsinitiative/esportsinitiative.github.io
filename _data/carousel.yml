@@ -1,0 +1,16 @@
+# Place images into the slideshow via the following parameters
+# Notes:
+#   - discription currently doesn't consistently work will look into it later (10/16/2016)
+#   - a link of "#" will be a NON link
+
+- image:        "images/events/base-slideshow/facecheck-1.jpg"
+  discription:  ""
+  link:         "#"
+
+- image:        "images/events/base-slideshow/shuffleVI-1.jpg"
+  discription:  ""
+  link:         "#"
+
+- image:        "images/events/base-slideshow/shuffleVI-2.jpg"
+  discription:  ""
+  link:         "#"

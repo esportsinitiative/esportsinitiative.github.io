@@ -1,0 +1,11 @@
+{% if include.link != null %}
+<a href="{{ include.link }}">
+{% else %}
+<a href="{{ include.info.link }}">
+{% endif %}
+  {% if include.image != null %}
+  <img src="{{ include.image | prepend: site.baseurl }}" />
+  {% else %}
+  <img src="{{ include.info.image | prepend: site.baseurl }}" />
+  {% endif %}
+</a>
