@@ -8,7 +8,8 @@ category: menu-bar
 
 	{% for team in site.data.teams.teams %}
 		{% assign game = site.data.games[team.game] %}
-		{% include info-box.html info=team link=game.name image=game.image %}
+		{% assign link = game.name %}
+		{% include info-box.html info=team image=game.image link=link %}
 	{% endfor %}
 
 </div>

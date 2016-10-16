@@ -1,12 +1,25 @@
-  <div class="col-md-4" style="margin-top: 50px">
-    <div class="sponsor-logo-display">
-      {% include templates/image-link.html info=include.info %}   
-    </div>
-    <div class="sponsor-desc">
-      {% if include.discription != null %}
-        <p>{{ include.discription }}</p>
-      {% else %}
-        <p>{{ include.info.discription }}</p>
-      {% endif %}
-    </div>
+{% assign image = include.image %}
+{% assign link = include.link %}
+{% assign discription = include.discription %}
+
+{% if image == null %}
+  {% assign image = include.info.image %}
+{% endif %}
+
+{% if link == null %}
+  {% assign link = include.info.link %}
+{% endif %}
+
+{% if discription == null %}
+  {% assign discription = include.info.discription %}
+{% endif %}
+
+
+<div class="col-md-4" style="margin-top: 50px">
+  <div class="sponsor-logo-display">
+    {% include templates/image-link.html image=image link=link %}
   </div>
+  <div class="sponsor-desc">
+    <p>{{ discription }}</p>
+  </div>
+</div>
