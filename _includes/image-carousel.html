@@ -9,16 +9,16 @@
   <!-- Wrapper for slides -->
   {% assign first=true %}
   <div class="carousel-inner" role="listbox">
-    {% for image in site.data.carousel %}
+    {% for item in site.data.carousel %}
       {% if first %}
         <div class="item active">
         {% assign first=false %}
       {% else %}
         <div class="item">
       {% endif %}
-        {% include templates/image-link.html info=image %}
+        {% include templates/image-link.html image=item.image link=item.link %}
         <div class="carousel-caption">
-          {{ image.discription }}
+          {{ item.discription }}
         </div>
       </div>
     {% endfor %}
