@@ -49,6 +49,14 @@ footer {
     list-style: none;
   }
 
+.carousel-inner {
+  max-height: 400px !important;
+}
+
+  .carousel-inner > .item > a > img {
+    width: 100%;
+  } 
+
 .aligner {
   display: flex;
   align-items: center;
