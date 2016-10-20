@@ -28,6 +28,7 @@ $spacing-unit:     30px;
 
 $text-color:       $black-darker;
 $background-color: $black;
+$footer-color:     $black-darker;
 $brand-color:      #2a7ae2;
 
 
@@ -37,14 +38,12 @@ $brand-color:      #2a7ae2;
 
 // Bootstrap Fix
 body {
-  background-color: $background-color;
+  background-color: $footer-color;
   color:            $gray-lighter;
 }
 
 footer {
-  background-color: $black-darker;
   padding: 5px 20px;
-  margin-top: 30px;
 }
 
   footer > ul {
@@ -62,6 +61,11 @@ a {
   a:hover {
     color: $green-light;
   }
+
+main {
+  background-color: $background-color;
+  padding-bottom: 30px;
+}
 
 .carousel-inner {
   max-height: 400px !important;
