@@ -15,6 +15,7 @@ $gray-darker:      #323232;
 $gray-dark:        #54544F;
 $gray-light:       #8F8F87;
 $gray-lighter:     #9d9d9d;
+$green-darkest:    #005d1f;
 $green-darker:     #00862d;
 $green-dark:       #009933;
 $green-light:      #33cc33;
@@ -47,6 +48,18 @@ footer {
 
   footer > ul {
     list-style: none;
+  }
+
+a {
+  color: $green-dark;
+}
+
+  a:visited {
+    color: $green-darkest;
+  }
+
+  a:hover {
+    color: $green-light;
   }
 
 .carousel-inner {
