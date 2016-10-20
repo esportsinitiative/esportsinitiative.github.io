@@ -23,7 +23,10 @@
       </div>
     </div>
   </a>
-  <div class="sponsor-desc">
-    <p>{{ discription }}</p>
-  </div>
+
+  {% if include.hide == null  %}
+    <div class="sponsor-desc">
+      <p>{{ discription }}</p>
+    </div>
+  {% endif %}
 </div>

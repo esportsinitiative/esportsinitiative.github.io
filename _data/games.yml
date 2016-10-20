@@ -1,3 +1,11 @@
+games:
+  - "leagueoflegends"
+  - "smash"
+  - "dota"
+  - "overwatch"
+  - "hearthstone"
+  - "csgo"
+
 esi:
   name:         "esi"
   name-display: "eSports Initiative"
