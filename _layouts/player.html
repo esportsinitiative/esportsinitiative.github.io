@@ -1,20 +1,74 @@
 ---
 layout: default
 ---
-<div style="text-align: center">
+
+<div class="info-message">
+	<h3>Recent Results:</h3>
+
+	<h4>Placements</h4>
+	<div class="row">
+		<div class="col-md-3 recent-game">
+			<h4>AllMid Gencon</h4>
+			<p>August 2016</p>
+			<div style="text-align: center; color: #FFD739;"><span style="font-size: 16pt">1</span><span style="font-size: 10pt">st</span></div>
+		</div>
+		<div class="col-md-3 recent-game">
+			<h4>AllMid Indypopcon</h4>
+			<p>June 2016</p>
+			<div style="text-align: center; color: #BEBEBE;"><span style="font-size: 16pt">2</span><span style="font-size: 10pt">nd</span></div>
+		</div>
+		<div class="col-md-3 recent-game">
+			<h4>BTN Invitational</h4>
+			<p>April 2016</p>
+			<div style="text-align: center; color: #FFD739;"><span style="font-size: 16pt">1</span><span style="font-size: 10pt">st</span></div>
+		</div>
+		<div class="col-md-3 recent-game">
+			<h4>ULoL Regional Playoffs</h4>
+			<p>March 2016</p>
+			<div style="text-align: center; color: #BEBEBE;"><span style="font-size: 16pt">2</span><span style="font-size: 10pt">nd</span></div>
+		</div>
+	</div>
+</div>
+
+<!--<div style="text-align: center">
 	<span class="glyphicon glyphicon-chevron-left" style="font-size: large; top: -1px"></span>
 	<a href="/teams/leagueoflegends/">
 		<img src="/images/logos/games/leagueoflegends.png" />
 	</a>
-</div>
+</div>-->
 
-<h1>{{ page.title | escape }}</h1>
+<h1 class="post-title">{{ page.title | escape }}</h1>
 
 <div class="post-content" itemprop="articleBody">
   {{ content }}
 </div>
 
 <style>
+	.recent-game {
+		border-left: 1px solid rgb(40,40,40);
+		border-right: 1px solid rgb(40,40,40);
+	}
+
+	.recent-game:hover {
+		background-color: rgb(40,40,40);
+	}
+
+	.recent-game a:hover{
+		text-decoration: none;
+	}
+
+	.info-message {
+		background-color: rgb(20,20,20);
+		padding: 25px;
+		padding-top: 5px;
+	}
+
+	.post-title {
+		background-color: rgb(20,20,20);
+		padding: 25px;
+		margin: 0;
+	}
+
 	.change-player-button {
 		text-align: center;
 		position: relative;
