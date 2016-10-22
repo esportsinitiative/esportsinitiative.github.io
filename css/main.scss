@@ -8,6 +8,7 @@ $base-font-family: "Helvetica", Helvetica, Roboto, sans-serif;
 $base-font-size:   18px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
+$large-font-size:  $base-font-size * 1.5;
 $base-line-height: 1.5;
 
 // From Design team
@@ -24,7 +25,8 @@ $black-darker:     #111;
 $white:            #fff;
 
 // Other
-$spacing-unit:     30px;
+$spacing-unit:        30px;
+$event-blurb-height:  300px;
 
 $text-color:       $black-darker;
 $background-color: $black;
@@ -137,6 +139,35 @@ $sponsor-logo-esi-height: 100px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
+
+  .event-list > ul {
+    list-style: none;
+  }
+
+.event-listing {
+  background-color: $gray-darker;
+  padding: 15px;
+  font-size: $large-font-size;
+  margin-bottom: 30px;
+}
+
+  .event-listing .row > div {
+    height: 100%;
+  }
+
+  .event-listing img {
+    max-height: 100px;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    .event-listing .row {
+      height: $event-blurb-height;
+    }
+
+    .event-listing img {
+      max-height: 100%;
+    }
+  }
 
 .hp-games-hr {
   margin-top: 0px;
