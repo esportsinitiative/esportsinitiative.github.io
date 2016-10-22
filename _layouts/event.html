@@ -32,12 +32,14 @@ layout: default
       </div>
 			<div>
         <h3>Games:</h3>
-        <ul class="post-list">
-          {% for game-name in page.games %}
-            {% assign game = site.data.games[game-name] %}
-            <li><a href="{{ game.link }}">{{ game.name-display }}</a></li>
-          {% endfor %}
-        </ul>
+        <div class="event-list">
+          <ul>
+            {% for game-name in page.games %}
+              {% assign game = site.data.games[game-name] %}
+              <li><a href="{{ game.link }}">{{ game.name-display }}</a></li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
       <div>
         <h3>Tags:</h3>

@@ -8,6 +8,7 @@ $base-font-family: "Helvetica", Helvetica, Roboto, sans-serif;
 $base-font-size:   18px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
+$large-font-size:  $base-font-size * 1.5;
 $base-line-height: 1.5;
 
 // From Design team
@@ -24,9 +25,10 @@ $black-darker:     #111;
 $white:            #fff;
 
 // Other
-$spacing-unit:     30px;
+$spacing-unit:        30px;
+$event-blurb-height:  200px;
 
-$text-color:       $black-darker;
+$text-color:       $gray-lighter;
 $background-color: $black;
 $footer-color:     $black-darker;
 $brand-color:      #2a7ae2;
@@ -39,7 +41,7 @@ $brand-color:      #2a7ae2;
 // Bootstrap Fix
 body {
   background-color: $footer-color;
-  color:            $gray-lighter;
+  color:            $text-color;
 }
 
 footer {
@@ -137,6 +139,60 @@ $sponsor-logo-esi-height: 100px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
+
+  .event-list > ul {
+    list-style: none;
+  }
+
+.event-listing {
+  background-color: $gray-darker;
+  padding: 15px;
+  font-size: $base-font-size;
+  margin-bottom: 30px;
+}
+
+  .event-listing .row > div {
+    height: 100%;
+  }
+
+  .event-listing img {
+    max-height: 100px;
+  }
+
+  .event-listing ul {
+    list-style: none;
+  }
+  
+  .event-listing i {
+    width: 50px;
+  }
+
+  .event-listing li span {
+    color: $text-color;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    .event-listing .row {
+      height: $event-blurb-height;
+    }
+
+    .event-listing img {
+      max-height: 100%;
+    }
+  }
+
+.event-blurb-games > i, .event-blurb-games > span {
+  float: left;
+  margin: 0px;
+}
+
+  .event-blurb-games > span > ul {
+    margin-left: 7px;
+  }
+
+  .event-blurb-games > span > ul > li {
+    display: inline;
+  }
 
 .hp-games-hr {
   margin-top: 0px;
