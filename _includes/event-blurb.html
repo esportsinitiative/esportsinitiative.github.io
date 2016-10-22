@@ -1,8 +1,10 @@
 <li class="post-listing">
   <a class="post-link" href="{{ include.event.url | prepend: site.baseurl }}">
-    <div class="row aligner">
-      <div class="col-xs-12 col-sm-2 align-max">
-        <img src="{{ include.event.image-link | prepend: site.baseurl }}" alt="{{ include.event.title }}" />
+    <div class="row">
+      <div class="col-xs-12 col-sm-2 aligner">
+        <div class="align-max">
+          <img src="{{ include.event.image-link | prepend: site.baseurl }}" alt="{{ include.event.title }}" />
+        </div>
       </div>
       <div class="col-xs-12 col-sm-10">
         <h2>
