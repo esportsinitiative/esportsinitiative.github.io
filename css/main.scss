@@ -71,6 +71,11 @@ main {
   padding: 0px;
 }
 
+.navbar-inverse {
+  background-color: $footer-color;
+  border: none;
+}
+
 .carousel-inner {
   max-height: 400px !important;
 }
