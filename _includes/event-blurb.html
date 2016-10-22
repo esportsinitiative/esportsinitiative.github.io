@@ -1,6 +1,7 @@
 <li class="event-listing">
   <a class="" href="{{ include.event.url | prepend: site.baseurl }}">
     <div class="row">
+
       <div class="col-xs-12 col-sm-3 aligner">
         <img src="{{ include.event.image-link | prepend: site.baseurl }}" alt="{{ include.event.title }}" />
       </div>
@@ -9,26 +10,27 @@
           {{ include.event.title | escape }}
         </h2>
 
-        <div class="row">
-          <div class="col-xs-12 col-sm-9">
-            {% include templates/event-summary.html date=include.event.date date-end=include.event.date-end location=include.event.location %}
-            <p>
-              <i class="fa fa-info" aria-hidden="true"></i> {{ include.event.description }}
-            </p>
-          </div>
-          <div class="col-xs-12 col-sm-3">
-            {% if include.event.games %}
-              <h4>Featuring:</h4>
-              <ul>
-                {% for game in include.event.games %}
-                  <li>{{ game }}</li>
-                {% endfor %}
-              </ul>
-            {% endif %}
-          </div>
-        </div>
-
+        <ul>
+          {% include templates/event-summary.html date=include.event.date date-end=include.event.date-end location=include.event.location %}
+          <li>
+            <i class="fa fa-info" aria-hidden="true"></i>
+            <span>{{ include.event.description }}</span>
+          </li>
+          <li>
+            <div class="event-blurb-games">
+              <i class="fa fa-gamepad" aria-hidden="true"></i>
+              <span>
+                <ul>
+                  {% for game in include.event.games %}
+                    <li>{{ game }}</li>
+                  {% endfor %}
+                </ul>
+              </span>
+            </div>
+          </li>
+        </ul>
       </div>
+
     </div>
   </a>
 </li>
