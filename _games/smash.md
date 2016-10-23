@@ -2,6 +2,6 @@
 layout:     "game"
 game:       "smash"
 ---
-# Smash HYPE!
+# Super Smash Bros.
 
-Hello this is the cool smash page!
+ESI hosts weekly Melee tournaments, as well as other larger events featuring the full lineup of Super Smash Bros. games.
