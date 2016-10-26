@@ -1,54 +1,67 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<article>
 
-  <header class="row">
+  <div class="row">
 		<div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-3 aligner game-image">
 			<div class="align-max">
 				<img src="{{ page.image-link }}" alt="{{ page.title }}">
 			</div>
 		</div>
-	</header>
+	</div>
 
 	<div class="row">
 		<div class="col-xs-12 col-sm-9">
+
 			<h1>{{ page.title }}</h1>
-      <div>
+      <ul class="event-summary">
         {% include templates/event-summary.html date=page.date date-end=page.date-end location=page.location %}
-      </div>
-			<div>
+      </ul>
+
+      <div>
 				{{ content }}
 			</div>
+
 		</div>
 		<div class="col-xs-12 col-sm-3">
+
       <div>
         <h3>{{ game.name-display }} Links</h3>
-        <ul class="post-list">
-          <li><a href="{{ page.event-link }}">Event</a></li>
-          <li><a href="{{ page.ticket-link }}">Ticket</a></li>
-          <li><a href="{{ page.rules-link }}">Rules</a></li>
+        <ul class="event-links">
+          {% if page.event-link != null %}
+            <li><a href="{{ page.event-link }}" class="btn btn-esi btn-block">Event</a></li>
+          {% endif %}
+          {% if page.ticket-link != null %}
+            <li><a href="{{ page.ticket-link }}" class="btn btn-esi btn-block">Ticket</a></li>
+          {% endif %}
+          {% if page.rules-link != null %}
+            <li><a href="{{ page.rules-link }}" class="btn btn-esi btn-block">Rules</a></li>
+          {% endif %}
         </ul>
       </div>
 			<div>
         <h3>Games:</h3>
-        <div class="event-list">
-          <ul>
-            {% for game-name in page.games %}
-              {% assign game = site.data.games[game-name] %}
-              <li><a href="{{ game.link }}">{{ game.name-display }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
+        <ul class="game-list">
+          {% for game-name in page.games %}
+            {% assign game = site.data.games[game-name] %}
+            {% if game != null %}
+              <li><a href="{{ game.link }}" class="btn btn-esi btn-block">{{ game.name-display }}</a></li>
+            {% else %}
+              <li><span class="btn btn-esi btn-block">{{ game-name | capitalize }}</a></li>
+            {% endif %}
+          {% endfor %}
+        </ul>
       </div>
       <div>
         <h3>Tags:</h3>
-        <ul class="post-list">
+        <ul class="tag-list">
           {% for tag in page.tags %}
             <li>{{ tag }}</li>
           {% endfor %}
         </ul>
       </div>
+
 		</div>
 	</div>
 
