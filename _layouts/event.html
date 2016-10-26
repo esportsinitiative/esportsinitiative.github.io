@@ -28,7 +28,7 @@ layout: default
 
       <div>
         <h3>{{ game.name-display }} Links</h3>
-        <ul class="post-list">
+        <ul class="event-links">
           <li><a href="{{ page.event-link }}">Event</a></li>
           <li><a href="{{ page.ticket-link }}">Ticket</a></li>
           <li><a href="{{ page.rules-link }}">Rules</a></li>
@@ -45,7 +45,7 @@ layout: default
       </div>
       <div>
         <h3>Tags:</h3>
-        <ul class="post-list">
+        <ul class="tag-list">
           {% for tag in page.tags %}
             <li>{{ tag }}</li>
           {% endfor %}
