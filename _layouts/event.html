@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<article>
 
   <div class="row">
 		<div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-3 aligner game-image">
@@ -13,15 +13,19 @@ layout: default
 
 	<div class="row">
 		<div class="col-xs-12 col-sm-9">
+
 			<h1>{{ page.title }}</h1>
-      <div>
+      <ul class="event-summary">
         {% include templates/event-summary.html date=page.date date-end=page.date-end location=page.location %}
-      </div>
-			<div>
+      </ul>
+
+      <div>
 				{{ content }}
 			</div>
+
 		</div>
 		<div class="col-xs-12 col-sm-3">
+
       <div>
         <h3>{{ game.name-display }} Links</h3>
         <ul class="post-list">
@@ -32,14 +36,12 @@ layout: default
       </div>
 			<div>
         <h3>Games:</h3>
-        <div class="event-list">
-          <ul>
-            {% for game-name in page.games %}
-              {% assign game = site.data.games[game-name] %}
-              <li><a href="{{ game.link }}">{{ game.name-display }}</a></li>
-            {% endfor %}
-          </ul>
-        </div>
+        <ul class="game-list">
+          {% for game-name in page.games %}
+            {% assign game = site.data.games[game-name] %}
+            <li><a href="{{ game.link }}">{{ game.name-display }}</a></li>
+          {% endfor %}
+        </ul>
       </div>
       <div>
         <h3>Tags:</h3>
@@ -49,6 +51,7 @@ layout: default
           {% endfor %}
         </ul>
       </div>
+
 		</div>
 	</div>
 

@@ -149,6 +149,22 @@ $sponsor-logo-esi-height: 100px;
     list-style: none;
   }
 
+.event-summary, .event-summary ul {
+  list-style: none;
+}
+
+  .event-summary i {
+    width: 30px;
+  }
+
+  .event-summary li span {
+    color: $text-color;
+  }
+
+.game-list {
+  list-style: none;
+}
+
 .event-listing {
   background-color: $gray-darker;
   padding: 15px;
@@ -162,18 +178,6 @@ $sponsor-logo-esi-height: 100px;
 
   .event-listing img {
     max-height: 100px;
-  }
-
-  .event-listing ul {
-    list-style: none;
-  }
-  
-  .event-listing i {
-    width: 50px;
-  }
-
-  .event-listing li span {
-    color: $text-color;
   }
 
   @media (min-width: $screen-sm-min) {

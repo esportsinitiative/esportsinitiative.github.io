@@ -1,5 +1,5 @@
 <li class="event-listing">
-  <a class="" href="{{ include.event.url | prepend: site.baseurl }}">
+  <a href="{{ include.event.url | prepend: site.baseurl }}">
     <div class="row">
 
       <div class="col-xs-12 col-sm-3 aligner">
@@ -10,7 +10,7 @@
           {{ include.event.title | escape }}
         </h2>
 
-        <ul>
+        <ul class="event-summary">
           {% include templates/event-summary.html date=include.event.date date-end=include.event.date-end location=include.event.location %}
           <li>
             <i class="fa fa-info" aria-hidden="true"></i>
