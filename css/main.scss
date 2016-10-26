@@ -183,28 +183,32 @@ $sponsor-logo-esi-height: 100px;
 
 .event-listing {
   background-color: $gray-darker;
-  padding: 15px;
+  padding: 0px 15px;
   font-size: $base-font-size;
   margin-bottom: 30px;
-}
 
-  .event-listing .row > div {
-    height: 100%;
+  .row > div {
+      height: 100%;
   }
 
-  .event-listing img {
+  img {
     max-height: 100px;
   }
 
   @media (min-width: $screen-sm-min) {
-    .event-listing .row {
+    .row {
       height: $event-blurb-height;
     }
 
-    .event-listing img {
+    img {
       max-height: 100%;
     }
   }
+}
+
+.event-listing:hover {
+  background-color: $gray-dark;
+}
 
 .event-blurb-games > i, .event-blurb-games > span {
   float: left;
