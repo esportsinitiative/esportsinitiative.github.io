@@ -163,10 +163,18 @@ $sponsor-logo-esi-height: 100px;
 
 .event-links {
   list-style: none;
+
+  li {
+    padding-bottom: 10px; 
+  }
 }
 
 .game-list {
   list-style: none;
+
+  li {
+    padding-bottom: 10px;
+  }
 }
 
 .tag-list {
@@ -278,3 +286,5 @@ $sponsor-logo-esi-height: 100px;
   padding: 25px;
   height: 150px;
 }
+
+@import "esi";

@@ -29,9 +29,15 @@ layout: default
       <div>
         <h3>{{ game.name-display }} Links</h3>
         <ul class="event-links">
-          <li><a href="{{ page.event-link }}">Event</a></li>
-          <li><a href="{{ page.ticket-link }}">Ticket</a></li>
-          <li><a href="{{ page.rules-link }}">Rules</a></li>
+          {% if page.event-link != null %}
+            <li><a href="{{ page.event-link }}" class="btn btn-esi btn-block">Event</a></li>
+          {% endif %}
+          {% if page.ticket-link != null %}
+            <li><a href="{{ page.ticket-link }}" class="btn btn-esi btn-block">Ticket</a></li>
+          {% endif %}
+          {% if page.rules-link != null %}
+            <li><a href="{{ page.rules-link }}" class="btn btn-esi btn-block">Rules</a></li>
+          {% endif %}
         </ul>
       </div>
 			<div>
@@ -39,7 +45,11 @@ layout: default
         <ul class="game-list">
           {% for game-name in page.games %}
             {% assign game = site.data.games[game-name] %}
-            <li><a href="{{ game.link }}">{{ game.name-display }}</a></li>
+            {% if game != null %}
+              <li><a href="{{ game.link }}" class="btn btn-esi btn-block">{{ game.name-display }}</a></li>
+            {% else %}
+              <li><span class="btn btn-esi btn-block">{{ game-name | capitalize }}</a></li>
+            {% endif %}
           {% endfor %}
         </ul>
       </div>
