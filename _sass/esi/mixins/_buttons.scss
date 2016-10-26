@@ -1,0 +1,52 @@
+// Copied from the Bootstrap 3.3.7 button
+// Button variants
+//
+// Easily pump out default styles, as well as :hover, :focus, :active,
+// and disabled options for all buttons
+
+@mixin button-variant-esi($color, $background, $hover, $clicked) {
+  color: $color !important; // TODO - 10/16/2016 - Remove !important
+  background-color: $background;
+
+  &:focus,
+  &.focus {
+    color: $color;
+    background-color: $hover;
+  }
+  &:hover {
+    color: $color;
+    background-color: $hover;
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    color: $color;
+    background-color: $hover;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $color;
+      background-color: $hover;
+    }
+  }
+  &:active,
+  &.active,
+  .open > &.dropdown-toggle {
+    background-image: none;
+  }
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus,
+    &.focus {
+      background-color: $background;
+    }
+  }
+
+  .badge {
+    color: $background;
+    background-color: $color;
+  }
+}
