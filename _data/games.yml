@@ -22,6 +22,9 @@ leagueoflegends:
   name-display: "League of Legends"
   image:        "/images/logos/games/leagueoflegends.png"
   link:         "/games/leagueoflegends"
+  community:
+    - name:     "OSU League of Legends"
+      link:     "https://www.facebook.com/groups/osulol/"
 
 smash:
   name:         "smash"
@@ -37,21 +40,42 @@ dota:
   name-display: "Dota 2"
   image:        "/images/logos/games/dota.png"
   link:         "/games/dota/"
+  community:
+    - name:     "OSU Dota"
+      link:     "https://www.facebook.com/groups/osudota/"
 
 overwatch:
   name:         "overwatch"
   name-display: "Overwatch"
   image:        "/images/logos/games/overwatch.png"
   link:         "/games/overwatch/"
+  community:
+    - name:     "OSU Overwatch"
+      link:     "https://www.facebook.com/groups/osuoverwatch/"
 
 hearthstone:
   name:         "hearthstone"
   name-display: "Hearthstone"
   image:        "/images/logos/games/hearthstone.png"
   link:         "/games/hearthstone/"
+  community:
+    - name:     "OSU Hearthstone"
+      link:     "https://www.facebook.com/groups/osuhearthstone/"
 
 csgo:
   name:         "csgo"
   name-display: "CS:GO"
   image:        "/images/logos/games/csgo.png"
   link:         "/games/csgo/"
+  community:
+    - name:     "OSU CS:GO"
+      link:     "https://www.facebook.com/groups/osucsgo/"
+
+starcraft:
+  name:         "starcraft"
+  name-display: "Starcraft"
+  image:        ""
+  link:         "/games/starcraft/"
+  community:
+    - name:     "OSU Starcraft"
+      link:     "https://www.facebook.com/groups/OSUstarcraft/"
