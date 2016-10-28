@@ -17,9 +17,11 @@ layout: default
 			<h1>{{ game.name-display }}</h1>
 			<div>
 				<h3>Community involvement:</h3>
-				{% for cl in game.community %}
-					<a href="{{ cl.link }}"><span>{{ cl.name }}</span></a>
-				{% endfor %}
+				<ul class="link-list">
+					{% for cl in game.community %}
+						<li><a class="btn btn-esi btn-lg" href="{{ cl.link }}"><span>{{ cl.name }}</span></a><li>
+					{% endfor %}
+				</ul>
 			</div>
 			<div>
 				{{ content }}
