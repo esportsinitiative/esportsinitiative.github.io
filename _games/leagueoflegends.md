@@ -24,4 +24,4 @@ League of Legends is a fast-paced, competitive online game that blends the speed
 - World's Largest Online Gaming Community
   - Join the world's largest online gaming community: make friends, form teams and battle tens of millions of opponents from countries across the globe, then exchange strats on reddit, YouTube, the forums and beyond
 
-http://na.leagueoflegends.com/
+Learn more on the [official site](http://na.leagueoflegends.com/)!
