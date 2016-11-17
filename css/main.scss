@@ -115,6 +115,11 @@ a:hover .hp-games {
   background-color: $gray-lighter;
 }
 
+  .hidden a:hover .hp-games {
+    background-color: $background-color;
+    cursor: default; 
+  }
+
 .image-padding {
   padding: 10px;
 }
