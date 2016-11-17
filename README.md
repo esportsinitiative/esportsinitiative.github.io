@@ -16,6 +16,7 @@ All easily solved and maintained by ***Jekyll!***
 # Updating Events
 
 *Notes*: Follows the example file in `_drafts/1995-01-01-template.md`
+
 1. Create a new file in the folder `_events/`
 2. Name the file `<date of event>-<name of event>.md` (e.g. `2016-09-01-smash-weekly.md` is the **Smash Weekly** on **Sept 1st, 2016**)
 3. In the new file add the **metadata** and fill in the content:
