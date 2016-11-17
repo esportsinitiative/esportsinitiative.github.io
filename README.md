@@ -13,7 +13,40 @@ The 5th iteration of ESI website. Main goals:
 All easily solved and maintained by ***Jekyll!***
 
 
-# Setup
+# Updating Events
+
+*Notes*: Follows the example file in `_drafts/1995-01-01-template.md`
+1. Create a new file in the folder `_events/`
+2. Name the file `<date of event>-<name of event>.md` (e.g. `2016-09-01-smash-weekly.md` is the **Smash Weekly** on **Sept 1st, 2016**)
+3. In the new file add the **metadata** and fill in the content:
+ - Leave content which is **unknown** or **non-existent** blank
+    ```yaml
+    ---
+    layout: "event"
+    title:  "General Meeting"
+    date:   2016-01-01 00:00:00
+    date-end: 2016-01-01 00:00:00
+    categories: "event"
+    location: "Round Meeting Room"
+    games:
+    - "lol"
+    tags:
+    - "something"
+    image-link: "/images/logos/esi/esi.png"
+    event-link:
+    ticket-link:
+    rules-link: 
+    description: "This is a general meeting"
+    ---
+
+    // Event info
+    ```
+4. Add event discription with links, images, text, headers, etc.
+  - Markdown styling (symbolized by the `.md` extension) follows the following [syntax](https://guides.github.com/features/mastering-markdown/)
+
+
+# Webmaster Stuff
+## Setup
 1. Pre-Setup
   - Are you on *Linux* or *OSX/MacOS*?
     - You have a good console! Proceed.
@@ -29,7 +62,7 @@ All easily solved and maintained by ***Jekyll!***
 5. Bring up the Jekyll site locally: `bundle exec jekyll serve`
 6. Navigate to the site: `http://127.0.0.1:4000`
 
-# Helpful Stuff:
+## Helpful Stuff:
 It helped us! May it help you!
 
 - [Jekyll](https://jekyllrb.com/)
