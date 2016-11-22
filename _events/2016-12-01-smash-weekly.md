@@ -1,10 +1,10 @@
 ---
 layout: "event"
 title:  "Smash Weekly"
-date:   2016-09-01 19:00:00
-date-end: 2016-09-01 22:00:00
+date:   2016-12-01 19:00:00
+date-end: 2016-12-01 22:00:00
 categories: "event"
-location: "Senate Chamber"
+location: "Ohio Union - Great Hall"
 games:
 - "smash"
 - "melee"
@@ -18,7 +18,4 @@ description: "Smash & Grab Weekly #1"
 ---
 # Smash Weekly
 
-- hi
-- bye
-- tie
-some content
+Come out to our last Smash Weekly of the Autumn semester.  
