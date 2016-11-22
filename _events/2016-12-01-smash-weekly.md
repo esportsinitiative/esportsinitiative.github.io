@@ -14,7 +14,7 @@ image-link: "/images/logos/events/smashgrab.png"
 event-link: "#"
 ticket-link:
 rules-link: "#"
-description: "Smash & Grab Weekly #1"
+description: "Smash & Grab Weekly"
 ---
 # Smash Weekly
 
