@@ -1,3 +1,14 @@
+<!-- TOC -->
+
+- [What is esportsinitiative.github.io?](#what-is-esportsinitiativegithubio)
+- [Updating Events](#updating-events)
+- [Webmaster Stuff](#webmaster-stuff)
+    - [Setup](#setup)
+    - [Helpful Stuff:](#helpful-stuff)
+    - [What isn't possible in Jekyll?](#what-isnt-possible-in-jekyll)
+
+<!-- /TOC -->
+
 # What is esportsinitiative.github.io?
 The 5th iteration of ESI website. Main goals:
 
@@ -55,14 +66,20 @@ All easily solved and maintained by ***Jekyll!***
   - Are you on *Windows*?
     - Download [Git](https://git-scm.com/) and [GitHub for Desktop](https://desktop.github.com/)
     - Git includes the amazing ***Git Bash*** console!
-2. Install [Jekyll](https://jekyllrb.com/) (Notice this requires installing [Ruby](https://www.ruby-lang.org/en/) which on Windows needs to be installed with [RubyInstaller](https://rubyinstaller.org/))
-3. Clone this repository into a good folder
+2. Install Ruby:
+  - Are you on *Linux* or *OSX/MacOS*?
+    - Installing [Ruby](https://www.ruby-lang.org/en/)
+  - Are you on *Windows*?
+    - Installed with [RubyInstaller](https://rubyinstaller.org/)
+    - Remember to check the box to add **Ruby** to your path
+3. Install [Jekyll](https://jekyllrb.com/) 
+4. Clone this repository into a good folder
   - Use: `git clone https://github.com/esportsinitiative/esportsinitiative.github.io.git`
   - **NOTICE**: If you installed [GitHub for Desktop](https://desktop.github.com/) you could clone through that for simplicity :)
-4. Navigate to the project folder. (Command `pwd` should print something like `.../esportsinitiative.github.io/`)
-5. Install the required gems: `bundle install`
-6. Bring up the Jekyll site locally: `bundle exec jekyll serve`
-7. Navigate to the site: `http://127.0.0.1:4000`
+5. Navigate to the project folder. (Command `pwd` should print something like `.../esportsinitiative.github.io/`)
+6. Install the required gems: `bundle install`
+7. Bring up the Jekyll site locally: `bundle exec jekyll serve`
+8. Navigate to the site: `http://127.0.0.1:4000`
 
 ## Helpful Stuff:
 It helped us! May it help you!
