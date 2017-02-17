@@ -1,0 +1,20 @@
+---
+layout: "event"
+title:  "Smash & Grab Monthly"
+date:   2017-03-04 10:00:00 -0500
+date-end: 2017-03-04 22:00:00 -0500
+categories: "event"
+location: "Interfaith and Prayer Room"
+games:
+- "Smash"
+- "WiiU"
+tags:
+- "something"
+image-link: "/images/logos/esi/esi.png"
+event-link:
+ticket-link:
+rules-link: 
+description: "This is a monthly WiiU tournament."
+---
+
+// Event info
