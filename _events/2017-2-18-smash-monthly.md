@@ -11,10 +11,10 @@ games:
 tags:
 - "something"
 image-link: "/images/logos/esi/esi.png"
-event-link:
-ticket-link:
+event-link: "https://www.facebook.com/events/195796920892260/?active_tab=about"
+ticket-link: "https://smash.gg/tournament/smash-grab-monthly-melee"
 rules-link: 
-description: "This is a monthly Melee tournament."
+description: "Feburary's Monthly Melee Tournament"
 ---
 
-// Event info
+ESI presents Feburary's Smash & Grab monthly.  This monthly will host only Melee.

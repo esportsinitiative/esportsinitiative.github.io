@@ -8,13 +8,14 @@ location: "Interfaith and Prayer Room"
 games:
 - "Smash"
 - "WiiU"
+- "Smash 4"
 tags:
 - "something"
 image-link: "/images/logos/esi/esi.png"
 event-link:
 ticket-link:
 rules-link: 
-description: "This is a monthly WiiU tournament."
+description: "March's Monthly Smash 4 Tournament"
 ---
 
-// Event info
+More info to come!
