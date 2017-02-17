@@ -1,8 +1,8 @@
 ---
 layout: "event"
 title:  "Shuffle: Battle of the Midwest"
-date:   2017-04-01 10:00:00 -0500
-date-end: 2017-04-02 22:00:00 -0500
+date:   2017-04-01 10:00:00 -0000
+date-end: 2017-04-02 22:00:00 -0000
 categories: "event"
 location: "The Schottenstein Center Men's Auxiliary Gym"
 games:
