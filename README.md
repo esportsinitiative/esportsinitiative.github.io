@@ -55,13 +55,14 @@ All easily solved and maintained by ***Jekyll!***
   - Are you on *Windows*?
     - Download [Git](https://git-scm.com/) and [GitHub for Desktop](https://desktop.github.com/)
     - Git includes the amazing ***Git Bash*** console!
-2. Install [Jekyll](https://jekyllrb.com/) (Notice this requires installing [Ruby](https://www.ruby-lang.org/en/))
+2. Install [Jekyll](https://jekyllrb.com/) (Notice this requires installing [Ruby](https://www.ruby-lang.org/en/) which on Windows needs to be installed with [RubyInstaller](https://rubyinstaller.org/))
 3. Clone this repository into a good folder
   - Use: `git clone https://github.com/esportsinitiative/esportsinitiative.github.io.git`
   - **NOTICE**: If you installed [GitHub for Desktop](https://desktop.github.com/) you could clone through that for simplicity :)
 4. Navigate to the project folder. (Command `pwd` should print something like `.../esportsinitiative.github.io/`)
-5. Bring up the Jekyll site locally: `bundle exec jekyll serve`
-6. Navigate to the site: `http://127.0.0.1:4000`
+5. Install the required gems: `bundle install`
+6. Bring up the Jekyll site locally: `bundle exec jekyll serve`
+7. Navigate to the site: `http://127.0.0.1:4000`
 
 ## Helpful Stuff:
 It helped us! May it help you!
