@@ -22,7 +22,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://esi.gg" # the base hostname & protocol for your site
 logo: "/images/logos/esi/esi-words.png"
 future: true
-timezone: America/New_York
+timezone: US/Eastern
 collections:
   events:
     output: true
