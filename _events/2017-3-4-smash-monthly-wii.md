@@ -6,12 +6,9 @@ date-end: 2017-03-04 22:00:00 -0000
 categories: "event"
 location: "Interfaith and Prayer Room"
 games:
-- "Smash"
-- "WiiU"
-- "Smash 4"
+- "smash"
 tags:
-- "something"
-image-link: "/images/logos/esi/esi.png"
+image-link: "/images/logos/events/smashgrab.png"
 event-link:
 ticket-link:
 rules-link: 

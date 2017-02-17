@@ -6,9 +6,8 @@ date-end: 2017-02-25 22:00:00 -0000
 categories: "event"
 location: "Senate Chamber"
 games:
-- "League of Legends"
+- "leagueoflegends"
 tags:
-- "something"
 image-link: "/images/logos/esi/esi.png"
 event-link: "https://www.facebook.com/events/1396333697058154/"
 ticket-link: "https://smash.gg/tournament/facecheck-league-of-legends/events/league-of-legends/brackets?filter=%7B%22phaseId%22%3A118765%7D"

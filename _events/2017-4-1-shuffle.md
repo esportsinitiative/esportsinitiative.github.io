@@ -6,13 +6,8 @@ date-end: 2017-04-02 22:00:00 -0000
 categories: "event"
 location: "The Schottenstein Center Men's Auxiliary Gym"
 games:
-- "Smash"
-- "Shuffle"
-- "Melee"
-- "WiiU"
-- "Project M"
+- "smash"
 tags:
-- "something"
 image-link: "/images/logos/esi/esi.png"
 event-link: "https://www.facebook.com/events/1273352279375387/"
 ticket-link: "https://smash.gg/tournament/shuffle-battle-of-the-midwest"

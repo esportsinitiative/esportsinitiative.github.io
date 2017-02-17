@@ -6,11 +6,9 @@ date-end: 2017-02-16 22:00:00 -0000
 categories: "event"
 location: "Senate Chamber"
 games:
-- "Smash"
-- "Melee"
+- "smash"
 tags:
-- "something"
-image-link: "/images/logos/esi/esi.png"
+image-link: "/images/logos/events/smashgrab.png"
 event-link: "https://www.facebook.com/events/195796920892260/?active_tab=about"
 ticket-link: "https://smash.gg/tournament/smash-grab-monthly-melee"
 rules-link: 
