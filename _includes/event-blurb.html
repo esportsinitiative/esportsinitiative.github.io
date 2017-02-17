@@ -21,8 +21,13 @@
               <i class="fa fa-gamepad" aria-hidden="true"></i>
               <span>
                 <ul>
-                  {% for game in include.event.games %}
-                    <li>{{ game }}</li>
+                  {% for game-name in include.event.games %}
+                    {% assign game = site.data.games[game-name] %}
+                    {% if game != null %}
+                      <li>{{ game.name-display }}</li>
+                    {% else %}
+                      <li>{{ game-name | capitalize }}</li>
+                    {% endif %}
                   {% endfor %}
                 </ul>
               </span>
