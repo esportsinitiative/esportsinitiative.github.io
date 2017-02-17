@@ -1,8 +1,8 @@
 ---
 layout: "event"
 title:  "Facecheck: Reborn"
-date:   2017-02-25 10:00:00 -0000
-date-end: 2017-02-25 22:00:00 -0000
+date:   2017-02-25 10:00:00
+date-end: 2017-02-25 22:00:00
 categories: "event"
 location: "Senate Chamber"
 games:

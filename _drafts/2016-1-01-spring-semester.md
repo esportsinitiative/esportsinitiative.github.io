@@ -1,7 +1,7 @@
 ---
 layout: "event"
 title:  "Spring Semester Events"
-date:   2016-01-01 12:00:00 -0000
+date:   2016-01-01 12:00:00
 date-end:
 categories: "event"
 location:

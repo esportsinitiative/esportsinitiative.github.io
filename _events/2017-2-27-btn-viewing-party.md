@@ -1,8 +1,8 @@
 ---
 layout: "event"
 title:  "Big Ten Network Viewing Party"
-date:   2017-02-27 17:00:00 -0000
-date-end: 2017-02-27 22:00:00 -0000
+date:   2017-02-27 17:00:00
+date-end: 2017-02-27 22:00:00
 categories: "event"
 location: "Ohio Stadium Recruit Room"
 games:
