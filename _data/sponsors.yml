@@ -10,6 +10,12 @@
   image:        "/images/logos/sponsors/twitch.png"
   discription:  "Twitch is the worlds leading video platform and community for gamers. Our events are streamed live on twitch.tv/esportsinitiative."
   
+- name:         "steelseries"
+  name-display: "SteelSeries"
+  link:         "https://steelseries.com/"
+  image:        "/images/logos/sponsors/steelseries.png"
+  discription:  "SteelSeries is a leading provider of gaming peripherals including mice, keyboards and headsets."
+  
 - name:         "xsplit"
   name-display: "XSplit"
   link:         "https://xsplit.com/"
@@ -21,7 +27,7 @@
   link:         "https://challonge.com/"
   image:        "/images/logos/sponsors/challonge.png"
   discription:  "The Ultimate Source for Tournament Brackets, Challonge empowers tournament brackets enabling a competitive atmosphere from your roommate 1v1's to Shuffle IX."
-
+    
 - name:         "player.me"
   name-display: "Player.Me"
   link:         "https://player.me/"
