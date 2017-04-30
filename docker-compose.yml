@@ -1,0 +1,24 @@
+## Use with either:
+# docker-compose up
+##
+version: "3"
+
+services:
+  # Development build of the site
+  dev:
+    # Name, Base Image
+    container_name: esi
+    image: jekyll/jekyll
+
+    # Run in the container
+    command: [ jekyll, serve ]
+
+    # Expose port localhost:4000 for the site
+    # Attaches <local_port>:<container_port>
+    ports:
+      - "4000:4000"
+
+    # Mount the volume (directory) <local_dir>:<container_dir>
+    # Attaches all files in . (current directory) into /src/jekyll/
+    volumes:
+      - .:/srv/jekyll

@@ -3,7 +3,9 @@
 - [What is esportsinitiative.github.io?](#what-is-esportsinitiativegithubio)
 - [Updating Events](#updating-events)
 - [Webmaster Stuff](#webmaster-stuff)
-    - [Setup](#setup)
+    - [1. Setup](#1-setup)
+    - [2. Setup - Local](#2-setup---local)
+    - [2. Setup - Docker](#2-setup---docker)
     - [Helpful Stuff:](#helpful-stuff)
     - [What isn't possible in Jekyll?](#what-isnt-possible-in-jekyll)
 
@@ -31,55 +33,83 @@ All easily solved and maintained by ***Jekyll!***
 1. Create a new file in the folder `_events/`
 2. Name the file `<date of event>-<name of event>.md` (e.g. `2016-09-01-smash-weekly.md` is the **Smash Weekly** on **Sept 1st, 2016**)
 3. In the new file add the **metadata** and fill in the content:
- - Leave content which is **unknown** or **non-existent** blank
-    ```yaml
-    ---
-    layout: "event"
-    title:  "General Meeting"
-    date:   2016-01-01 00:00:00
-    date-end: 2016-01-01 00:00:00
-    categories: "event"
-    location: "Round Meeting Room"
-    games:
-    - "lol"
-    tags:
-    - "something"
-    image-link: "/images/logos/esi/esi.png"
-    event-link:
-    ticket-link:
-    rules-link: 
-    description: "This is a general meeting"
-    ---
+    - Leave content which is **unknown** or **non-existent** blank
+      ```yaml
+      ---
+      layout: "event"
+      title:  "General Meeting"
+      date:   2016-01-01 00:00:00
+      date-end: 2016-01-01 00:00:00
+      categories: "event"
+      location: "Round Meeting Room"
+      games:
+      - "lol"
+      tags:
+      - "something"
+      image-link: "/images/logos/esi/esi.png"
+      event-link:
+      ticket-link:
+      rules-link: 
+      description: "This is a general meeting"
+      ---
 
-    // Event info
-    ```
+      // Event info
+      ```
 4. Add event discription with links, images, text, headers, etc.
-  - Markdown styling (symbolized by the `.md` extension) follows the following [syntax](https://guides.github.com/features/mastering-markdown/)
+    - Markdown styling (symbolized by the `.md` extension) follows the following [syntax](https://guides.github.com/features/mastering-markdown/)
 
 
 # Webmaster Stuff
-## Setup
+## 1. Setup
+
 1. Pre-Setup
-  - Are you on *Linux* or *OSX/MacOS*?
-    - You have a good console! Proceed.
-    - Optional [GitHub for Desktop](https://desktop.github.com/) 
-  - Are you on *Windows*?
-    - Download [Git](https://git-scm.com/) and [GitHub for Desktop](https://desktop.github.com/)
-    - Git includes the amazing ***Git Bash*** console!
-2. Install Ruby:
-  - Are you on *Linux* or *OSX/MacOS*?
-    - Installing [Ruby](https://www.ruby-lang.org/en/)
-  - Are you on *Windows*?
-    - Installed with [RubyInstaller](https://rubyinstaller.org/)
-    - Remember to check the box to add **Ruby** to your path
-3. Install [Jekyll](https://jekyllrb.com/) 
-4. Clone this repository into a good folder
-  - Use: `git clone https://github.com/esportsinitiative/esportsinitiative.github.io.git`
-  - **NOTICE**: If you installed [GitHub for Desktop](https://desktop.github.com/) you could clone through that for simplicity :)
+    - Are you on *Linux* or *OSX/MacOS*?
+        - You have a good console! Proceed.
+        - Optional [GitHub for Desktop](https://desktop.github.com/) 
+    - Are you on *Windows*?
+        - Download [Git](https://git-scm.com/) and [GitHub for Desktop](https://desktop.github.com/)
+        - Git includes the amazing ***Git Bash*** console!
+2. Clone this repository into a good folder
+    - Use: `git clone https://github.com/esportsinitiative/esportsinitiative.github.io.git`
+    - **NOTICE**: If you installed [GitHub for Desktop](https://desktop.github.com/) you could clone through that for simplicity :)
+3. Proceed to either the [Setup - Local](#2-setup---local) or [Setup - Docker](#2-setup---docker) instructions.
+
+## 2. Setup - Local
+
+4. Install Ruby:
+    - Are you on *Linux* or *OSX/MacOS*?
+        - Installing [Ruby](https://www.ruby-lang.org/en/)
+    - Are you on *Windows*?
+        - Installed with [RubyInstaller](https://rubyinstaller.org/)
+        - Remember to check the box to add **Ruby** to your path
+5. Install [Jekyll](https://jekyllrb.com/)
+6. Navigate to the project folder. (Command `pwd` should print something like `.../esportsinitiative.github.io/`)
+    - Navigate with the `cd` (change directory) and `ls` (list) commands
+7. Install the required gems: `bundle install`
+8. Bring up the Jekyll site locally: `bundle exec jekyll serve`
+9. Navigate to the site: `http://127.0.0.1:4000`
+
+## 2. Setup - Docker
+**NOTE:** There are problems with the auto rebuilding support, at least on Windows, as such this method will be less produce when making edits. This also 
+
+4. Install [Docker](https://www.docker.com/)
 5. Navigate to the project folder. (Command `pwd` should print something like `.../esportsinitiative.github.io/`)
-6. Install the required gems: `bundle install`
-7. Bring up the Jekyll site locally: `bundle exec jekyll serve`
-8. Navigate to the site: `http://127.0.0.1:4000`
+6. Either run:
+    - Docker:
+      ```BASH
+      # Replace `pwd` with $pwd` on PowerShell
+      docker build -t esi .
+      docker run -it --rm -v `pwd`:/srv/jekyll -p 4000:4000 esi bash
+      jekyll serve
+      # If the site doesn't reload between changes reload the server with
+      # ctrl + c
+      # jekyll serve
+      ```
+    - Docker Compose
+      ```BASH
+      docker-compose up
+      ```
+7. Navigate to the site: `http://127.0.0.1:4000`
 
 ## Helpful Stuff:
 It helped us! May it help you!
