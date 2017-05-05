@@ -8,7 +8,7 @@ GEM
     ffi (1.9.18-x64-mingw32)
     ffi (1.9.18-x86-mingw32)
     forwardable-extended (2.6.0)
-    jekyll (3.3.0)
+    jekyll (3.4.3)
       addressable (~> 2.4)
       colorator (~> 1.0)
       jekyll-sass-converter (~> 1.0)
@@ -47,11 +47,11 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  jekyll (= 3.3.0)
+  jekyll (= 3.4.3)
   minima
 
 RUBY VERSION
-   ruby 2.3.3p222
+   ruby 2.4.0p0
 
 BUNDLED WITH
    1.14.6
