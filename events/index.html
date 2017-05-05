@@ -4,10 +4,8 @@ title: Events
 category: menu-bar
 ---
 
-<div class="container">
-  <ul class="unpadded-list">
-    {% for event in site.events %}
-      {% include event-blurb.html event=event %}
-    {% endfor %}
-  </ul>
-</div>
+<ul class="unpadded-list">
+  {% for event in site.events %}
+    {% include event-blurb.html event=event %}
+  {% endfor %}
+</ul>
