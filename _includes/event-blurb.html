@@ -1,41 +1,39 @@
 <li class="event-listing">
-  <a href="{{ include.event.url | prepend: site.baseurl }}">
-    <div class="row">
+  <a class="row" href="{{ include.event.url | prepend: site.baseurl }}">
 
-      <div class="col-xs-12 col-sm-3 aligner">
-        <img src="{{ include.event.image-link | prepend: site.baseurl }}" alt="{{ include.event.title }}" />
-      </div>
-      <div class="col-xs-12 col-sm-9">
-        <h2>
-          {{ include.event.title | escape }}
-        </h2>
-
-        <ul class="event-summary">
-          {% include templates/event-summary.html date=include.event.date date-end=include.event.date-end location=include.event.location %}
-          <li>
-            <i class="fa fa-info" aria-hidden="true"></i>
-            <span>{{ include.event.description }}</span>
-          </li>
-          <li>
-            <div class="event-blurb-games">
-              <i class="fa fa-gamepad" aria-hidden="true"></i>
-              <span>
-                <ul>
-                  {% for game-name in include.event.games %}
-                    {% assign game = site.data.games[game-name] %}
-                    {% if game != null %}
-                      <li>{{ game.name-display }}</li>
-                    {% else %}
-                      <li>{{ game-name | capitalize }}</li>
-                    {% endif %}
-                  {% endfor %}
-                </ul>
-              </span>
-            </div>
-          </li>
-        </ul>
-      </div>
-
+    <div class="col-xs-12 col-sm-3 aligner">
+      <img src="{{ include.event.image-link | prepend: site.baseurl }}" alt="{{ include.event.title }}" />
     </div>
+    <div class="col-xs-12 col-sm-9">
+      <h2>
+        {{ include.event.title | escape }}
+      </h2>
+
+      <ul class="event-summary unpadded-list">
+        {% include templates/event-summary.html date=include.event.date date-end=include.event.date-end location=include.event.location %}
+        <li>
+          <i class="fa fa-info" aria-hidden="true"></i>
+          <span>{{ include.event.description }}</span>
+        </li>
+        <li>
+          <div class="event-blurb-games">
+            <i class="fa fa-gamepad" aria-hidden="true"></i>
+            <span>
+              <ul class="unpadded-list">
+                {% for game-name in include.event.games %}
+                  {% assign game = site.data.games[game-name] %}
+                  {% if game != null %}
+                    <li>{{ game.name-display }}</li>
+                  {% else %}
+                    <li>{{ game-name | capitalize }}</li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+
   </a>
 </li>

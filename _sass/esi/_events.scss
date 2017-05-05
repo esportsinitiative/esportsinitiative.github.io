@@ -2,25 +2,23 @@
   @include button-variant-esi($white, $green-dark, $green-light, $green-darkest);
 }
 
-.event-list {
-  max-height: 1000px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-  .event-list > ul {
-    list-style: none;
-  }
-
 .event-listing {
   background-color: $gray-darker;
-  padding: 15px 15px;
   font-size: $base-font-size;
   margin-bottom: 15px;
 
+  .row {
+    padding: 15px;
+  }
+
+  :hover {
+    background-color: $gray-dark;
+    text-decoration: none;
+  }
+
   img {
     max-height: 100px;
-    width: 100%;
+    max-width: 100%;
   }
 
   h2 {
@@ -42,6 +40,17 @@
   }
 }
 
-.event-listing:hover {
-  background-color: $gray-dark;
+.event-blurb-games {
+  > i, > span {
+    float: left;
+    margin: 0px;
+  }
+
+  > span > ul {
+    margin-left: 7px;
+  }
+
+  > span > ul > li {
+    display: inline;
+  }
 }

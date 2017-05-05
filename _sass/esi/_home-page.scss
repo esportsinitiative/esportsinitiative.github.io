@@ -18,3 +18,9 @@ a:hover .hp-games {
         cursor: default;
     }
 }
+
+.hp-event-list {
+    max-height: 1000px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

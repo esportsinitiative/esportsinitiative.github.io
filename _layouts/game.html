@@ -29,7 +29,7 @@ layout: default
 		</div>
 		<div class="col-xs-12 col-sm-6">
 			<h3>{{ game.name-display }} Events</h3>
-			<ul class="post-list">
+			<ul class="unpadded-list">
 				{% assign games = site.events | where:"games",game.name %}
 				{% for event in games reversed limit:6 %}
 					{% include event-blurb.html event=event %}
