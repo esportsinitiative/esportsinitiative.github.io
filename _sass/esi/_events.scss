@@ -1,3 +1,47 @@
 .btn-esi {
   @include button-variant-esi($white, $green-dark, $green-light, $green-darkest);
 }
+
+.event-list {
+  max-height: 1000px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+  .event-list > ul {
+    list-style: none;
+  }
+
+.event-listing {
+  background-color: $gray-darker;
+  padding: 15px 15px;
+  font-size: $base-font-size;
+  margin-bottom: 15px;
+
+  img {
+    max-height: 100px;
+    width: 100%;
+  }
+
+  h2 {
+    margin-top: 10px;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    .row {
+      display: flex;
+    }
+
+    img {
+      max-height: 100%;
+    }
+
+    h2 {
+      margin-top: 0px;
+    }
+  }
+}
+
+.event-listing:hover {
+  background-color: $gray-dark;
+}

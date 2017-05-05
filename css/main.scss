@@ -26,7 +26,6 @@ $white:            #fff;
 
 // Other
 $spacing-unit:        30px;
-$event-blurb-height:  200px;
 
 $text-color:       $gray-lighter;
 $background-color: $black;
@@ -34,7 +33,7 @@ $footer-color:     $black-darker;
 $brand-color:      #2a7ae2;
 
 
-@import "minima";
+// @import "minima";
 // Import the bootstrap theme
 @import "bootstrap";
 
@@ -101,58 +100,14 @@ main {
   max-width: 100%;
 }
 
-.hp-games {
-  height: 100px;
-}
-
-  @media (min-width: $screen-sm-min) {
-    .hp-games {
-      height:150px;
-    }
-  }
-
-a:hover .hp-games {
-  background-color: $gray-lighter;
-}
-
-  .hidden a:hover .hp-games {
-    background-color: $background-color;
-    cursor: default; 
-  }
-
 .image-padding {
   padding: 10px;
 }
-
-$sponsor-logo-esi-height: 100px;
-.sponsor-logo-esi {
-  background-color: $gray-darker;
-  height: $sponsor-logo-esi-height;
-  padding: 10px;
-}
-
-.sponsor-logo-esi:hover {
-  background-color: $gray-dark;
-}
-
-  .sponsor-logo-esi img {
-    max-height: $sponsor-logo-esi-height - 20;
-  }
 
 .pad-sides {
   padding-left:  10px;
   padding-right: 10px;
 }
-
-.event-list {
-  max-height: 1000px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-  .event-list > ul {
-    list-style: none;
-  }
 
 .event-summary, .event-summary ul {
   list-style: none;
@@ -188,35 +143,6 @@ $sponsor-logo-esi-height: 100px;
 
 .tag-list {
   list-style: none;
-}
-
-.event-listing {
-  background-color: $gray-darker;
-  padding: 0px 15px;
-  font-size: $base-font-size;
-  margin-bottom: 30px;
-
-  .row > div {
-      height: 100%;
-  }
-
-  img {
-    max-height: 100px;
-  }
-
-  @media (min-width: $screen-sm-min) {
-    .row {
-      height: $event-blurb-height;
-    }
-
-    img {
-      max-height: 100%;
-    }
-  }
-}
-
-.event-listing:hover {
-  background-color: $gray-dark;
 }
 
 .event-blurb-games > i, .event-blurb-games > span {
