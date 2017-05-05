@@ -4,27 +4,25 @@ layout: default
 <article>
 
   <div class="row">
-		<div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-3 aligner game-image">
-			<div class="align-max">
-				<img src="{{ page.image-link }}" alt="{{ page.title }}">
-			</div>
-		</div>
-	</div>
+    <div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-3 aligner game-image">
+      <img class="image-max-width" src="{{ page.image-link }}" alt="{{ page.title }}">
+    </div>
+  </div>
 
-	<div class="row">
-		<div class="col-xs-12 col-sm-9">
+  <div class="row">
+    <div class="col-xs-12 col-sm-9">
 
-			<h1>{{ page.title }}</h1>
+      <h1>{{ page.title }}</h1>
       <ul class="event-summary">
         {% include templates/event-summary.html date=page.date date-end=page.date-end location=page.location %}
       </ul>
 
       <div>
-				{{ content }}
-			</div>
+        {{ content }}
+      </div>
 
-		</div>
-		<div class="col-xs-12 col-sm-3">
+    </div>
+    <div class="col-xs-12 col-sm-3">
 
       <div>
         <h3>{{ game.name-display }} Links</h3>
@@ -40,7 +38,7 @@ layout: default
           {% endif %}
         </ul>
       </div>
-			<div>
+      <div>
         <h3>Games:</h3>
         <ul class="game-list">
           {% for game-name in page.games %}
