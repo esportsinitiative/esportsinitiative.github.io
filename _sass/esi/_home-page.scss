@@ -1,21 +1,21 @@
+a:hover .hp-games {
+    background-color: $gray-lighter;
+}
+
 .hp-games {
     height: 100px;
 
     img {
-        width: 100%;
+        max-width: 100%;
+    }
+
+    .hp-games-esi-logo {
+        padding-left:  10px;
+        padding-right: 10px;
     }
 
     @media (min-width: $screen-sm-min) {
         height:150px;
-    }
-}
-
-a:hover .hp-games {
-    background-color: $gray-lighter;
-
-    .hidden {
-        background-color: $background-color;
-        cursor: default;
     }
 }
 

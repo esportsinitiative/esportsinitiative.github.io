@@ -10,7 +10,7 @@ esi:
   name:         "esi"
   name-display: "eSports Initiative"
   image:        "/images/logos/esi/esi.png"
-  link:         "#"
+  link:         ""
   community:
     - name:     "eSports Initiative Facebook"
       link:     "https://www.facebook.com/esportsinitiative"

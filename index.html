@@ -29,7 +29,9 @@ layout: default
       </div>
     </div>
     <div class="col-sm-2 hidden visible-sm visible-md visible-lg">
-      {% include templates/hp-gs.html game=esi classes="pad-sides" %}
+      <div class="aligner hp-games hp-games-esi-logo">
+        <img src="{{ esi.image | prepend: site.baseurl }}" alt="{{ esi.name-display }}">
+      </div>
     </div>
     <div class="col-sm-5 col-xs-12">
       <div class="row">
