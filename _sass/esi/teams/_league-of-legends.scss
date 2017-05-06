@@ -1,3 +1,11 @@
+.hide-map {
+    display: none;
+
+    @media (min-width: $screen-md-min) {
+        display: contents;
+    }
+}
+
 .recent-game {
     border-left: 1px solid rgb(40,40,40);
     border-right: 1px solid rgb(40,40,40);

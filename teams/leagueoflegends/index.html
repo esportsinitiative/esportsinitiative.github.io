@@ -32,7 +32,7 @@ logo: /images/logos/lol.png
 	</div>
 </div>
 
-<div id="full-screen-display">
+<div class="hide-map">
 	<img class="image-max-width" src="/images/teams/lol/lol-map.jpg" alt="League of Legends Map" />
 	<div id="player-container">
 		{% assign players = site.data.teams.leagueoflegends["players"] %}
@@ -51,7 +51,7 @@ logo: /images/logos/lol.png
 		{% endfor %}
 	</div>
 </div>
-<div id="small-screen-display" style="display: none;">
+<div style="margin-top: 15px;">
 	<div class="row">
 		{% assign players = site.data.teams.leagueoflegends["players"] %}
 		{% for pname in players %}
@@ -68,12 +68,3 @@ logo: /images/logos/lol.png
 		{% endfor %}
 	</div>
 </div>
-
-<script>
-	$(function() {
-		if(window.innerWidth < 1000) {
-			$('#full-screen-display').css('display','none');
-			$('#small-screen-display').css('display','block');
-		}
-	});
-</script>
