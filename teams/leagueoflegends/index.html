@@ -4,12 +4,6 @@ title: "League of Legends"
 logo: /images/logos/lol.png
 ---
 
-<!--<div class="info-message">
-	<h4>Want to be part of the action? Apply today!</h4>
-	<p>Players: <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdLi6aRM3B4kjbM60cmtYj87Jj1zy1rGT9BHC9w3wBsPIsyfw/viewform?">Application</a></p>
-	<p>For other inquiries please contact <a href="mailto:ferguson.571@osu.edu">Peter Ferguson</a> at ferguson.571@osu.edu</p>
-</div>-->
-
 <div class="info-message">
 	<h3>Recent Results:</h3>
 
@@ -38,8 +32,8 @@ logo: /images/logos/lol.png
 	</div>
 </div>
 
-<div id="full-screen-display">
-	<img src= "/images/teams/lol/lol-map.jpg" />
+<div class="hide-map">
+	<img class="image-max-width" src="/images/teams/lol/lol-map.jpg" alt="League of Legends Map" />
 	<div id="player-container">
 		{% assign players = site.data.teams.leagueoflegends["players"] %}
 		{% for pname in players %}
@@ -57,7 +51,7 @@ logo: /images/logos/lol.png
 		{% endfor %}
 	</div>
 </div>
-<div id="small-screen-display" style="display: none;">
+<div style="margin-top: 15px;">
 	<div class="row">
 		{% assign players = site.data.teams.leagueoflegends["players"] %}
 		{% for pname in players %}
@@ -74,147 +68,3 @@ logo: /images/logos/lol.png
 		{% endfor %}
 	</div>
 </div>
-<style>
-	.recent-game {
-		border-left: 1px solid rgb(40,40,40);
-		border-right: 1px solid rgb(40,40,40);
-	}
-
-	.recent-game:hover {
-		background-color: rgb(40,40,40);
-	}
-
-	.recent-game a:hover{
-		text-decoration: none;
-	}
-
-	.info-message {
-		background-color: rgb(20,20,20);
-		padding: 25px;
-		margin-bottom: 50px;
-	}
-
-	.info-message a:hover {
-		color: rgb(200,200,200);
-		text-decoration: none;
-	}
-
-	#player-container {
-		position: relative;
-	}
-
-	#lol-top {
-		position: absolute;
-		display: inline;
-		top: -600px;
-		left: 100px;
-	}
-	#lol-top:hover {
-		top: -622px !important;
-		left: 85px !important;
-	}
-
-	#lol-jungle {
-		position: absolute;
-		display: inline;
-		top: -500px;
-		left: 250px;
-	}
-	#lol-jungle:hover {
-		top: -525px !important;
-		left: 235px !important;
-	}
-
-	#lol-mid {
-		position: absolute;
-		display: inline;
-		top: -400px;
-		left: 385px;
-	}
-	#lol-mid:hover {
-		top: -422px !important;
-		left: 370px !important;
-	}
-
-	#lol-adc {
-		position: absolute;
-		display: inline;
-		top: -225px;
-		left: 700px;
-	}
-	#lol-adc:hover {
-		top: -325px !important;
-		left: 685px !important;
-	}
-
-	#lol-support {
-		position: absolute;
-		display: inline;
-		top: -235px;
-		left: 550px;
-	}
-	#lol-support:hover {
-		top: -335px !important;
-		left: 535px !important;
-	}
-
-	.player-image-small {
-		text-align: center;
-		background-color: rgb(40,40,40);
-	}
-	.player-image-small img {
-		width: 150px;
-		height:225px;
-	}
-	.player-image-small a:hover {
-		text-decoration: none;
-	}
-	.player-image-small h2 {
-		background-color: rgb(20,20,20);
-	}
-	.player-image-small:hover {
-		background-color: rgb(60,60,60);
-	}
-
-
-	.player-image {
-		text-align: center;
-	}
-	.player-image:hover {
-		text-decoration: none;
-	}
-	.player-image img {
-		width: 150px;
-		height:225px;
-	}
-	.player-image:hover img {
-		width: 180px !important;
-		height: 270px !important;
-		background: radial-gradient(rgba(200,0,0,1), rgba(200,0,0,0) 80%);
-		cursor: pointer;
-	}
-	.player-image h3 {
-		display: none;
-	}
-	.player-image:hover h3 {
-		display: block;
-	}
-
-	.player-name {
-		color: #B91623 !important;
-		text-shadow:
-		    -1px -1px 0 #000,
-		    1px -1px 0 #000,
-		    -1px 1px 0 #000,
-		    1px 1px 0 #000; 
-	}
-</style>
-
-<script>
-	$(function() {
-		if(window.innerWidth < 1000) {
-			$('#full-screen-display').css('display','none');
-			$('#small-screen-display').css('display','block');
-		}
-	});
-</script>

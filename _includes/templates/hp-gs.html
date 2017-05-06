@@ -1,7 +1,5 @@
 <a href="{{ include.game.link }}">
     <div class="{{ include.classes | default: 'col-xs-4' }} aligner hp-games">
-        <div class="align-max">
-            <img src="{{ include.game.image | prepend: site.baseurl }}" alt="{{ include.game.name-display }}">
-        </div>
+        <img class="image-max-width" src="{{ include.game.image | prepend: site.baseurl }}" alt="{{ include.game.name-display }}">
     </div>
 </a>

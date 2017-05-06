@@ -1,0 +1,141 @@
+.hide-map {
+    display: none;
+
+    @media (min-width: $screen-md-min) {
+        display: contents;
+    }
+}
+
+.recent-game {
+    border-left: 1px solid rgb(40,40,40);
+    border-right: 1px solid rgb(40,40,40);
+}
+
+.recent-game:hover {
+    background-color: rgb(40,40,40);
+}
+
+.recent-game a:hover{
+    text-decoration: none;
+}
+
+.info-message {
+    background-color: rgb(20,20,20);
+    padding: 25px;
+    margin-bottom: 50px;
+}
+
+.info-message a:hover {
+    color: rgb(200,200,200);
+    text-decoration: none;
+}
+
+#player-container {
+    position: relative;
+}
+
+#lol-top {
+    position: absolute;
+    display: inline;
+    top: -600px;
+    left: 100px;
+}
+#lol-top:hover {
+    top: -622px !important;
+    left: 85px !important;
+}
+
+#lol-jungle {
+    position: absolute;
+    display: inline;
+    top: -500px;
+    left: 250px;
+}
+#lol-jungle:hover {
+    top: -525px !important;
+    left: 235px !important;
+}
+
+#lol-mid {
+    position: absolute;
+    display: inline;
+    top: -400px;
+    left: 385px;
+}
+#lol-mid:hover {
+    top: -422px !important;
+    left: 370px !important;
+}
+
+#lol-adc {
+    position: absolute;
+    display: inline;
+    top: -225px;
+    left: 700px;
+}
+#lol-adc:hover {
+    top: -325px !important;
+    left: 685px !important;
+}
+
+#lol-support {
+    position: absolute;
+    display: inline;
+    top: -235px;
+    left: 550px;
+}
+#lol-support:hover {
+    top: -335px !important;
+    left: 535px !important;
+}
+
+.player-image-small {
+    text-align: center;
+    background-color: rgb(40,40,40);
+}
+.player-image-small img {
+    width: 150px;
+    height:225px;
+}
+.player-image-small a:hover {
+    text-decoration: none;
+}
+.player-image-small h2 {
+    background-color: rgb(20,20,20);
+}
+.player-image-small:hover {
+    background-color: rgb(60,60,60);
+}
+
+
+.player-image {
+    text-align: center;
+}
+.player-image:hover {
+    text-decoration: none;
+}
+.player-image img {
+    width: 150px;
+    height:225px;
+}
+.player-image:hover img {
+    width: 180px !important;
+    height: 270px !important;
+    background: radial-gradient(rgba(200,0,0,1), rgba(200,0,0,0) 80%);
+    cursor: pointer;
+}
+.player-image h3 {
+    display: none;
+}
+.player-image:hover h3 {
+    display: block;
+}
+
+.player-name {
+    color: #B91623 !important;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000; 
+}

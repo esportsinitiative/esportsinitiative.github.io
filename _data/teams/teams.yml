@@ -2,8 +2,3 @@
   game:         "leagueoflegends"
   team:         "teams/leagueoflegends.yml"
   discription:  "OSU's competitive League of Legends team."
-
-- name:         "OSU - Overwatch"
-  game:         "overwatch"
-  team:         "teams/overwatch.yml"
-  discription:  "OSU's competitive Overwatch team."

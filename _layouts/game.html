@@ -6,9 +6,7 @@ layout: default
 	
 	<div class="row">
 		<div class="col-xs-12 col-xs-offset-0 col-sm-6 col-sm-offset-3 aligner game-image">
-			<div class="align-max">
-				<img src="{{ game.image }}" alt="{{ game.name-display }}">
-			</div>
+			<img class="image-max-width" src="{{ game.image }}" alt="{{ game.name-display }}">
 		</div>
 	</div>
 
@@ -29,7 +27,7 @@ layout: default
 		</div>
 		<div class="col-xs-12 col-sm-6">
 			<h3>{{ game.name-display }} Events</h3>
-			<ul class="post-list">
+			<ul class="unpadded-list">
 				{% assign games = site.events | where:"games",game.name %}
 				{% for event in games reversed limit:6 %}
 					{% include event-blurb.html event=event %}
