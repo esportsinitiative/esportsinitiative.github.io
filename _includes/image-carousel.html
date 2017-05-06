@@ -16,7 +16,7 @@
       {% else %}
         <div class="item">
       {% endif %}
-        {% include templates/image-link.html image=item.image link=item.link %}
+        {% include templates/image-link.html image=item.image link=item.link link_classes="hp-carousel-image-strech" %}
         <div class="carousel-caption">
           {{ item.discription }}
         </div>

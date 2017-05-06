@@ -1,14 +1,18 @@
-$sponsor-logo-esi-height: 100px;
-.sponsor-logo-esi {
-    background-color: $gray-darker;
-    height: $sponsor-logo-esi-height;
+$sponsor-logo-height: 100px;
+.sponsor-logo {
     padding: 10px;
+
+    div {
+        background-color: $gray-darker;
+        height: $sponsor-logo-height;
+        padding: 10px;
+    }
 
     :hover {
         background-color: $gray-dark;
     }
     img {
-        max-height: $sponsor-logo-esi-height - 20;
+        max-height: $sponsor-logo-height - 20;
         max-width: 100%;
     }
 }

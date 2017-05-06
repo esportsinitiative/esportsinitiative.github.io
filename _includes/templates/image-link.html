@@ -10,6 +10,8 @@
 {% endif %}
 
 
-<a class="image-link" href="{{ link }}">
-  <img src="{{ image | prepend: site.baseurl }}" />
+<a class="{{ include.link_classes }}" class="image-link" href="{{ link }}">
+  <div class="aligner">
+    <img src="{{ image | prepend: site.baseurl }}" />
+  </div>
 </a>
