@@ -27,6 +27,12 @@ collections:
   events:
     output: true
     permalink: /events/:year/:month/:day/:title/
+  pastevents:
+    output: true
+    permalink: /pastevents/:year/:month/:day/:title/
+  fundraising:
+    output: true
+    permalink: /fundraising/:year/:month/:title/
   games:
     output: true
     permalink: /games/:title/
