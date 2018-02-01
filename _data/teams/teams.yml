@@ -2,3 +2,7 @@
   game:         "leagueoflegends"
   team:         "teams/leagueoflegends.yml"
   discription:  "OSU's competitive League of Legends team."
+- name:         "OSU - CS:GO"
+  game:         "csgo"
+  team:         "teams/csgo.yml"
+  discription:  "OSU's competitive CS:GO team."

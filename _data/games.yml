@@ -5,6 +5,7 @@ games:
   - "overwatch"
   - "hearthstone"
   - "csgo"
+  - "fortnite"
 
 esi:
   name:         "esi"
@@ -79,3 +80,14 @@ starcraft:
   community:
     - name:     "OSU Starcraft"
       link:     "https://www.facebook.com/groups/OSUstarcraft/"
+
+fortnite:
+  name:         "fortnite"
+  name-display: "Fortnite"
+  image:        "/images/logos/games/fortnite.jpg"
+  link:         "/games/fortnite/"
+  community:
+    - name:     "eSports Initiative Facebook"
+      link:     "https://www.facebook.com/esportsinitiative"
+    - name:     "eSports Initiative General Group"
+      link:     "https://www.facebook.com/groups/419171418251335/"

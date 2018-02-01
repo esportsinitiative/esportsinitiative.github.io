@@ -1,0 +1,10 @@
+players:
+  - "Knowa"
+
+
+Knowa:
+  name:         "Knowa"
+  position:     "Rifler"
+  link:         "/teams/csgo/players/test.html"
+  image:        "/images/teams/csgo/players/Silhouette.png"
+  discription:  "Test.  Knowa sucks."

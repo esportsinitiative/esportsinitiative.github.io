@@ -1,0 +1,10 @@
+---
+layout: default
+title: Fundraising
+category: menu-bar
+---
+<ul class="unpadded-list">
+  {% for event in site.fundraising %}
+    {% include event-blurb.html event=event %}
+  {% endfor %}
+</ul>
