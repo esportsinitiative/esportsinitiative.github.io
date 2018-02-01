@@ -6,7 +6,7 @@
       <div class="col-sm-5 col-xs-12">
         <div class="row">
           <h2>{{ site.title | escape }}</h2>
-          <p>2011-2017 &copy; The {{ site.title | escape }}</p>
+          <p>2011-2018 &copy; The {{ site.title | escape }}</p>
         </div>
       </div>
 
@@ -16,7 +16,7 @@
         </div>
         <div class="row">
           <!-- sms for "Social Media Site" -->
-          {% for sms in site.data.socialmedia %} 
+          {% for sms in site.data.socialmedia %}
             {% include sm-link.html sm=sms %}
           {% endfor %}
         </div>
