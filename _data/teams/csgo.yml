@@ -1,10 +1,41 @@
 players:
   - "Knowa"
-
+  - "G4CShooter"
+  - "Minecraftlover69"
+  - "Tezro"
+  - "Rio"
 
 Knowa:
   name:         "Knowa"
-  position:     "Rifler"
-  link:         "/teams/csgo/players/test.html"
+  position:     "Role Player/Anchor"
+  link:         "/teams/csgo/players/knowa.html"
   image:        "/images/teams/csgo/players/Silhouette.png"
-  discription:  "Test.  Knowa sucks."
+  discription:  "Bio to come!"
+
+G4CShooter:
+  name:         "G4CShooter"
+  position:     "Awper"
+  link:         "/teams/csgo/players/g4cshooter.html"
+  image:        "/images/teams/csgo/players/Silhouette.png"
+  discription:  "Bio to come!"
+
+Minecraftlover69:
+  name:         "Minecraftlover69"
+  position:     "Entry"
+  link:         "/teams/csgo/players/minecraftlover69.html"
+  image:        "/images/teams/csgo/players/Silhouette.png"
+  discription:  "Bio to come!"
+
+Tezro:
+  name:         "Tezro"
+  position:     "IGL"
+  link:         "/teams/csgo/players/tezro.html"
+  image:        "/images/teams/csgo/players/Silhouette.png"
+  discription:  "Bio to come!"
+
+Rio:
+  name:         "Rio"
+  position:     "Support/Anchor"
+  link:         "/teams/csgo/players/rio.html"
+  image:        "/images/teams/csgo/players/Silhouette.png"
+  discription:  "Bio to come!"

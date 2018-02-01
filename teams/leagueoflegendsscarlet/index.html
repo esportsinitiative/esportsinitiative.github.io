@@ -1,0 +1,85 @@
+---
+layout: team
+title: "League of Legends Scarlet"
+logo: /images/logos/lol.png
+---
+
+<div class="info-message">
+	<h3>Recent Results:</h3>
+
+	<h4>Placements</h4>
+	<div class="row">
+		<div class="col-md-3 recent-game">
+			<h4>Midwest eSports Conference</h4>
+			<p>November 2017</p>
+			<div style="text-align: center; color: #FFD739;"><span style="font-size: 16pt">1</span><span style="font-size: 10pt">st</span></div>
+		</div>
+		<div class="col-md-3 recent-game">
+			<h4>Compete League Elite</h4>
+			<p>November 2017</p>
+			<div style="text-align: center; color: #BEBEBE;"><span style="font-size: 16pt">2</span><span style="font-size: 10pt">nd</span></div>
+		</div>
+		<div class="col-md-3 recent-game">
+			<h4>Upserge Professional League</h4>
+			<p>October 2017</p>
+			<div style="text-align: center; color: #FFD739;"><span style="font-size: 16pt">1</span><span style="font-size: 10pt">st</span></div>
+		</div>
+		<div class="col-md-3 recent-game">
+			<h4>AllMid Gencon</h4>
+			<p>August 2016</p>
+			<div style="text-align: center; color: #FFD739;"><span style="font-size: 16pt">1</span><span style="font-size: 10pt">st</span></div>
+		</div>
+		<div class="col-md-3 recent-game">
+			<h4>AllMid Indypopcon</h4>
+			<p>June 2016</p>
+			<div style="text-align: center; color: #BEBEBE;"><span style="font-size: 16pt">2</span><span style="font-size: 10pt">nd</span></div>
+		</div>
+		<div class="col-md-3 recent-game">
+			<h4>BTN Invitational</h4>
+			<p>April 2016</p>
+			<div style="text-align: center; color: #FFD739;"><span style="font-size: 16pt">1</span><span style="font-size: 10pt">st</span></div>
+		</div>
+		<div class="col-md-3 recent-game">
+			<h4>ULoL Regional Playoffs</h4>
+			<p>March 2016</p>
+			<div style="text-align: center; color: #BEBEBE;"><span style="font-size: 16pt">2</span><span style="font-size: 10pt">nd</span></div>
+		</div>
+	</div>
+</div>
+
+<div class="hide-map">
+	<img class="image-max-width" src="/images/teams/lol/lol-map.jpg" alt="League of Legends Map" />
+	<div id="player-container">
+		{% assign players = site.data.teams.leagueoflegendsscarlet["players"] %}
+		{% for pname in players %}
+			{% assign player = site.data.teams.leagueoflegendsscarlet[pname] %}
+
+			<a id="{{ player.position | downcase | prepend: 'lol-' }}" class="player-image" href="{{ player.link | prepend: site.baseurl }}">
+				{% if player.position == "Support" or player.position == "ADC" %}
+					<h3 class="player-name">{{ player.name }}</h3>
+					<img src="{{ player.image | prepend: site.baseurl }}" alt="{{ player.name }}">
+				{% else %}
+					<img src="{{ player.image | prepend: site.baseurl }}" alt="{{ player.name }}">
+					<h3 class="player-name">{{ player.name }}</h3>
+				{% endif %}
+			</a>
+		{% endfor %}
+	</div>
+</div>
+<div style="margin-top: 15px;">
+	<div class="row">
+		{% assign players = site.data.teams.leagueoflegendsscarlet["players"] %}
+		{% for pname in players %}
+			{% assign player = site.data.teams.leagueoflegendsscarlet[pname] %}
+
+			<div class="col-sm-4">
+				<div class="player-image-small">
+					<a href="{{ player.link | prepend: site.baseurl }}">
+						<img src="{{ player.image | prepend: site.baseurl }}" alt="{{ player.name }}" />
+						<h2>{{ player.name }}</h2>
+					</a>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>

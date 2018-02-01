@@ -11,7 +11,7 @@ games:
 - "overwatch"
 - "fortnite"
 tags:
-image-link: #edit to have flyer picture "/images/logos/events/BTN-lol.jpg"
+image-link: "/images/logos/esi/esi.png"
 event-link:
 ticket-link:
 rules-link:

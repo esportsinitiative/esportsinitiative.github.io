@@ -1,6 +1,6 @@
 ---
 layout:     "game"
-game:       "fortnite"
+game:       "rocketleague"
 ---
-# Fortnite
+# Rocket League
 More info to come!

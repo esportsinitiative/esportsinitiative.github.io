@@ -9,6 +9,8 @@ layout: default
   </div>
 
   {% assign dota = site.data.games["dota"] %}
+  {% assign rocketleague = site.data.games["rocketleague"] %}
+  {% assign fortnite = site.data.games["fortnite"] %}
   {% assign leagueoflegends = site.data.games["leagueoflegends"] %}
   {% assign smash = site.data.games["smash"] %}
   {% assign esi = site.data.games["esi"] %}
@@ -26,6 +28,7 @@ layout: default
         {% include templates/hp-gs.html game=dota %}
         {% include templates/hp-gs.html game=leagueoflegends %}
         {% include templates/hp-gs.html game=smash %}
+        {% include templates/hp-gs.html game=rocketleague %}
       </div>
     </div>
     <div class="col-sm-2 hidden visible-sm visible-md visible-lg">
@@ -38,7 +41,8 @@ layout: default
         {% include templates/hp-gs.html game=csgo %}
         {% include templates/hp-gs.html game=hearthstone %}
         {% include templates/hp-gs.html game=overwatch %}
-      </div>      
+        {% include templates/hp-gs.html game=fortnite %}
+      </div>
     </div>
     <div class="col-xs-12">
       <hr class="row hp-games-hr" />

@@ -1,7 +1,7 @@
 ---
 layout: team
-title: "League of Legends"
-logo: /images/logos/lol.png
+title: "Overwatch"
+logo: /images/logos/games/overwatch.png
 ---
 
 <div class="info-message">
@@ -10,34 +10,24 @@ logo: /images/logos/lol.png
 	<h4>Placements</h4>
 	<div class="row">
 		<div class="col-md-3 recent-game">
-			<h4>AllMid Gencon</h4>
-			<p>August 2016</p>
+			<h4>Ohayocon</h4>
+			<p>Janurary 2018</p>
 			<div style="text-align: center; color: #FFD739;"><span style="font-size: 16pt">1</span><span style="font-size: 10pt">st</span></div>
 		</div>
 		<div class="col-md-3 recent-game">
-			<h4>AllMid Indypopcon</h4>
-			<p>June 2016</p>
-			<div style="text-align: center; color: #BEBEBE;"><span style="font-size: 16pt">2</span><span style="font-size: 10pt">nd</span></div>
-		</div>
-		<div class="col-md-3 recent-game">
-			<h4>BTN Invitational</h4>
-			<p>April 2016</p>
+			<h4>Ohayocon</h4>
+			<p>Janurary 2017</p>
 			<div style="text-align: center; color: #FFD739;"><span style="font-size: 16pt">1</span><span style="font-size: 10pt">st</span></div>
-		</div>
-		<div class="col-md-3 recent-game">
-			<h4>ULoL Regional Playoffs</h4>
-			<p>March 2016</p>
-			<div style="text-align: center; color: #BEBEBE;"><span style="font-size: 16pt">2</span><span style="font-size: 10pt">nd</span></div>
-		</div>
+			</div>
 	</div>
 </div>
 
 <div class="hide-map">
 	<img class="image-max-width" src="/images/teams/lol/lol-map.jpg" alt="League of Legends Map" />
 	<div id="player-container">
-		{% assign players = site.data.teams.leagueoflegends["players"] %}
+		{% assign players = site.data.teams.overwatch["players"] %}
 		{% for pname in players %}
-			{% assign player = site.data.teams.leagueoflegends[pname] %}
+			{% assign player = site.data.teams.overwatch[pname] %}
 
 			<a id="{{ player.position | downcase | prepend: 'lol-' }}" class="player-image" href="{{ player.link | prepend: site.baseurl }}">
 				{% if player.position == "Support" or player.position == "ADC" %}
@@ -53,9 +43,9 @@ logo: /images/logos/lol.png
 </div>
 <div style="margin-top: 15px;">
 	<div class="row">
-		{% assign players = site.data.teams.leagueoflegends["players"] %}
+		{% assign players = site.data.teams.overwatch["players"] %}
 		{% for pname in players %}
-			{% assign player = site.data.teams.leagueoflegends[pname] %}
+			{% assign player = site.data.teams.overwatch[pname] %}
 
 			<div class="col-sm-4">
 				<div class="player-image-small">

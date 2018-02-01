@@ -1,0 +1,49 @@
+players:
+  - "Resp4wn"
+  - "Soup"
+  - "Giggles"
+  - "Meechlie"
+  - "HattyKitty"
+  - "Jolt"
+
+Resp4wn:
+  name:         "Resp4wn"
+  position:     "DPS"
+  link:         "/teams/overwatch/players/Resp4wn.html"
+  image:        "/images/teams/overwatch/players/Silhouette.png"
+  discription:  "Bio to come!"
+
+Soup:
+  name:         "Soup"
+  position:     "Flex"
+  link:         "/teams/overwatch/players/Soup.html"
+  image:        "/images/teams/overwatch/players/Silhouette.png"
+  discription:  "Bio to come!"
+
+Giggles:
+  name:         "Giggles"
+  position:     "Flex"
+  link:         "/teams/overwatch/players/Giggles.html"
+  image:        "/images/teams/overwatch/players/Silhouette.png"
+  discription:  "Bio to come!"
+
+Meechlie:
+  name:         "Meechlie"
+  position:     "Support"
+  link:         "/teams/overwatch/players/Meechlie.html"
+  image:        "/images/teams/overwatch/players/Silhouette.png"
+  discription:  "Bio to come!"
+
+HattyKitty:
+  name:         "HattyKitty"
+  position:     "Support"
+  link:         "/teams/overwatch/players/HattyKitty.html"
+  image:        "/images/teams/overwatch/players/Silhouette.png"
+  discription:  "Bio to come!"
+
+Jolt:
+  name:         "Jolt"
+  position:     "Tank"
+  link:         "/teams/overwatch/players/Jolt.html"
+  image:        "/images/teams/overwatch/players/Silhouette.png"
+  discription:  "Bio to come!"
