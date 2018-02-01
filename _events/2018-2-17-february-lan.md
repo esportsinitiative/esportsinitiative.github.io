@@ -35,4 +35,3 @@ eSports Initiative presents its February LAN!  This month we will be offering to
   * CS:GO - $10 Steam Card
   * League of Legends - Riot Prizing and $10 RP Card
   * Overwatch - $10 Amazon Giftcard
-  * Fortnite(still gotta figure out)
