@@ -1,0 +1,25 @@
+players:
+  - "jbob2015"
+  - "KiiNGz"
+  - "Vortex"
+
+jbob2015:
+  name:         "jbob2015"
+#  position:     "Top"
+  link:         "/teams/rocketleague/players/jbob2015.html"
+  image:        "/images/teams/rocket/players/Silhouette.png"
+  discription:  "Bio to come!"
+
+KiiNGz:
+  name:         "KiiNGz"
+#  position:     "Jungle"
+  link:         "/teams/rocketleague/players/KiiNGz.html"
+  image:        "/images/teams/rocket/players/Silhouette.png"
+  discription:  "Bio to come!" #
+
+Vortex:
+  name:         "Vortex"
+#  position:     "Jungle"
+  link:         "/teams/rocketleague/players/Vortex.html"
+  image:        "/images/teams/rocket/players/Silhouette.png"
+  discription:  "Bio to come!"

@@ -1,4 +1,30 @@
-- name:         "OSU - League of Legends"
+- name:         "Ohio State University League of Legends Scarlet"
   game:         "leagueoflegends"
-  team:         "teams/leagueoflegends.yml"
-  discription:  "OSU's competitive League of Legends team."
+  teamname:     "leagueoflegendsscarlet"
+  team:         "teams/leagueoflegendsscarlet.yml"
+  discription:  "The Ohio State University's Scarlet competitive League of Legends team."
+
+- name:         "Ohio State University League of Legends Grey"
+  game:         "leagueoflegends"
+  teamname:     "leagueoflegendsgrey"
+  team:         "teams/leagueoflegendsgrey.yml"
+  discription:  "The Ohio State University's Grey competitive League of Legends team."
+
+- name:         "Ohio State University CS:GO"
+  game:         "csgo"
+  teamname:     "csgo"
+  team:         "teams/csgo.yml"
+  discription:  "The Ohio State University's competitive CS:GO team."
+
+
+- name:         "Ohio State University Rocket League"
+  game:         "rocketleague"
+  teamname:     "rocketleague"
+  team:         "teams/rocketleague.yml"
+  discription:  "The Ohio State University's competitive Rocket League team."
+
+- name:         "Ohio State University Overwatch"
+  game:         "overwatch"
+  teamname:     "overwatch"
+  team:         "teams/overwatch.yml"
+  discription:  "The Ohio State University's competitive Overwatch team."

@@ -1,0 +1,41 @@
+players:
+  - "Karizma y0"
+  - "McDougal"
+  - "ayylmaozedong"
+  - "Noah211"
+  - "Buckeyes"
+
+Karizma y0:
+  name:         "Karizma y0"
+  position:     "Top"
+  link:         "/teams/leagueoflegendsgrey/players/Karizmay0.html"
+  image:        "/images/teams/lol/players/Silhouette.png"
+  discription:  "Bio to come!"
+
+McDougal:
+  name:         "McDougal"
+  position:     "Jungle"
+  link:         "/teams/leagueoflegendsgrey/players/McDougal.html"
+  image:        "/images/teams/lol/players/Silhouette.png"
+  discription:  "Bio to come!"
+
+ayylmaozedong:
+  name:         "ayylmaozedong"
+  position:     "Mid"
+  link:         "/teams/leagueoflegendsgrey/players/ayylmaozedong.html"
+  image:        "/images/teams/lol/players/Silhouette.png"
+  discription:  "Bio to come!"
+
+Noah211:
+  name:         "Noah211"
+  position:     "Support"
+  link:         "/teams/leagueoflegendsgrey/players/Noah211.html"
+  image:        "/images/teams/lol/players/Silhouette.png"
+  discription:  "Bio to come!"
+
+Buckeyes:
+  name:         "Buckeyes"
+  position:     "ADC"
+  link:         "/teams/leagueoflegendsgrey/players/Buckeyes.html"
+  image:        "/images/teams/lol/players/Silhouette.png"
+  discription:  "Bio to come!"

@@ -1,0 +1,44 @@
+---
+layout: team
+title: "League of Legends Grey"
+logo: /images/logos/lol.png
+---
+
+
+
+<div class="hide-map">
+	<img class="image-max-width" src="/images/teams/lol/lol-map.jpg" alt="League of Legends Map" />
+	<div id="player-container">
+		{% assign players = site.data.teams.leagueoflegendsgrey["players"] %}
+		{% for pname in players %}
+			{% assign player = site.data.teams.leagueoflegendsgrey[pname] %}
+
+			<a id="{{ player.position | downcase | prepend: 'lol-' }}" class="player-image" href="{{ player.link | prepend: site.baseurl }}">
+				{% if player.position == "Support" or player.position == "ADC" %}
+					<h3 class="player-name">{{ player.name }}</h3>
+					<img src="{{ player.image | prepend: site.baseurl }}" alt="{{ player.name }}">
+				{% else %}
+					<img src="{{ player.image | prepend: site.baseurl }}" alt="{{ player.name }}">
+					<h3 class="player-name">{{ player.name }}</h3>
+				{% endif %}
+			</a>
+		{% endfor %}
+	</div>
+</div>
+<div style="margin-top: 15px;">
+	<div class="row">
+		{% assign players = site.data.teams.leagueoflegendsgrey["players"] %}
+		{% for pname in players %}
+			{% assign player = site.data.teams.leagueoflegendsgrey[pname] %}
+
+			<div class="col-sm-4">
+				<div class="player-image-small">
+					<a href="{{ player.link | prepend: site.baseurl }}">
+						<img src="{{ player.image | prepend: site.baseurl }}" alt="{{ player.name }}" />
+						<h2>{{ player.name }}</h2>
+					</a>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>

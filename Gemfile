@@ -9,7 +9,7 @@ ruby RUBY_VERSION
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "3.4.3"
+gem "jekyll", "3.5"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -19,3 +19,8 @@ gem "jekyll", "3.4.3"
 # group :jekyll_plugins do
 #   gem "jekyll-github-metadata", "~> 1.0"
 # end
+
+# Added at 2018-01-23 21:51:34 -0500 by desktop-qi6nc88\becca:
+gem 'tzinfo'
+
+gem 'tzinfo-data'

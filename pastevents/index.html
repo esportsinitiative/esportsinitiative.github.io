@@ -1,0 +1,11 @@
+---
+layout: default
+title: "Past Events"
+category: menu-bar
+---
+
+<ul class="unpadded-list">
+  {% for event in site.pastevents %}
+    {% include event-blurb.html event=event %}
+  {% endfor %}
+</ul>

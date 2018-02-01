@@ -1,35 +1,40 @@
-# - name:         
-#   name-display: 
-#   link:         
-#   image:        
-#   discription:  
+# - name:
+#   name-display:
+#   link:
+#   image:
+#   discription:
+#
+- name: "future sponsers"
+  name-display: "Future Sponsor?"
+  link: "mailto:someone@example.com?Subject=Prospective%20Sponsership"
+  image: "/images/logos/esi/esi.png"
+  discription: "Are you interested in partnering up with eSports Initiaitve?  Do you wanna get involved in bringing eSports to one of the most well known and renowned colleges? Click on our logo above to send us an email!"
+- name:         "Discord"
+  name-display: "Discord"
+  link:         "https://discordapp.com/"
+  image:        "/images/logos/sponsors/discord.png"
+  discription:  "Discord is ESI's premier choice for voice communication and is the leading software for communication among gamers. "
 
-- name:         "twitch"
-  name-display: "Twitch.tv"
-  link:         "https://twitch.tv/"
-  image:        "/images/logos/sponsors/twitch.png"
-  discription:  "Twitch is the worlds leading video platform and community for gamers. Our events are streamed live on twitch.tv/esportsinitiative."
-  
-- name:         "steelseries"
-  name-display: "SteelSeries"
-  link:         "https://steelseries.com/"
-  image:        "/images/logos/sponsors/steelseries.png"
-  discription:  "SteelSeries is a leading provider of gaming peripherals including mice, keyboards and headsets."
-  
-- name:         "xsplit"
-  name-display: "XSplit"
-  link:         "https://xsplit.com/"
-  image:        "/images/logos/sponsors/xsplit.png"
-  discription:  "XSplit allows recording, streaming and sharing of your best gaming moments to platforms such as Twitch, Dailymotion, Ustream and YouTube Live."
-  
-- name:         "challonge"
-  name-display: "Challonge"
-  link:         "https://challonge.com/"
-  image:        "/images/logos/sponsors/challonge.png"
-  discription:  "The Ultimate Source for Tournament Brackets, Challonge empowers tournament brackets enabling a competitive atmosphere from your roommate 1v1's to Shuffle IX."
-    
-- name:         "player.me"
-  name-display: "Player.Me"
-  link:         "https://player.me/"
-  image:        "/images/logos/sponsors/player-me.png"
-  discription:  "Player.me is the social discovery platform for the gaming community. Discover, Share and Collaborate with other Players, Groups and Companies."
+#- name:         "steelseries"
+#  name-display: "SteelSeries"
+#  link:         "https://steelseries.com/"
+#  image:        "/images/logos/sponsors/steelseries.png"
+#  discription:  "SteelSeries is a leading provider of gaming peripherals including mice, keyboards and headsets."
+
+#- name:         "xsplit"
+#  name-display: "XSplit"
+#  link:         "https://xsplit.com/"
+#  image:        "/images/logos/sponsors/xsplit.png"
+#  discription:  "XSplit allows recording, streaming and sharing of your best gaming moments to platforms such as Twitch, Dailymotion, Ustream and YouTube Live."
+
+#- name:         "challonge"
+#  name-display: "Challonge"
+  #link:         "https://challonge.com/"
+  #image:        "/images/logos/sponsors/challonge.png"
+#  discription:  "The Ultimate Source for Tournament Brackets, Challonge empowers tournament brackets enabling a competitive atmosphere from your roommate 1v1's to Shuffle IX."
+
+#- name:         "player.me"
+#  name-display: "Player.Me"
+#  link:         "https://player.me/"
+#  image:        "/images/logos/sponsors/player-me.png"
+#  discription:  "Player.me is the social discovery platform for the gaming community. Discover, Share and Collaborate with other Players, Groups and Companies."

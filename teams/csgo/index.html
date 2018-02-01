@@ -1,0 +1,58 @@
+---
+layout: team
+title: "CS:GO"
+logo: /images/logos/games/csgo.png
+---
+
+<div class="info-message">
+	<h3>Recent Results:</h3>
+	<div class="row">
+		<div class="col-md-3 recent-game">
+			<h4>Collegiate Star League</h4>
+			<p>April 2016</p>
+			<div style="text-align: center; color: #FCFF60;"><span style="font-size: 16pt">3</span><span style="font-size: 10pt">rd</span><span style="font-size: 16pt">/4</span><span style="font-size: 10pt">th</span></div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div id = "about" class="container">
+	<h4>About Ohio State CS:GO</h4>
+<div style="text-align: center"><span style="font-size: 12pt">One of Ohio State's many eSports teams, Ohio State CS:GO found success very early, finishing 3rd/4th their first season.  After an off season, they are now back and ready to represent as one of the best teams in the nation.</span></div>
+</div>
+<div class="hide-map">
+	<img class="image-max-width" src="/images/teams/lol/lol-map.jpg" alt="League of Legends Map" />
+	<div id="player-container">
+		{% assign players = site.data.teams.csgo["players"] %}
+		{% for pname in players %}
+			{% assign player = site.data.teams.csgo[pname] %}
+
+			<a id="{{ player.position | downcase | prepend: 'lol-' }}" class="player-image" href="{{ player.link | prepend: site.baseurl }}">
+				{% if player.position == "Support" or player.position == "ADC" %}
+					<h3 class="player-name">{{ player.name }}</h3>
+					<img src="{{ player.image | prepend: site.baseurl }}" alt="{{ player.name }}">
+				{% else %}
+					<img src="{{ player.image | prepend: site.baseurl }}" alt="{{ player.name }}">
+					<h3 class="player-name">{{ player.name }}</h3>
+				{% endif %}
+			</a>
+		{% endfor %}
+	</div>
+</div>
+<div style="margin-top: 15px;">
+	<div class="row">
+		{% assign players = site.data.teams.csgo["players"] %}
+		{% for pname in players %}
+			{% assign player = site.data.teams.csgo[pname] %}
+
+			<div class="col-sm-4">
+				<div class="player-image-small">
+					<a href="{{ player.link | prepend: site.baseurl }}">
+						<img src="{{ player.image | prepend: site.baseurl }}" alt="{{ player.name }}" />
+						<h2>{{ player.name }}</h2>
+					</a>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>
